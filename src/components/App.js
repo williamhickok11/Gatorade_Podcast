@@ -136,7 +136,7 @@ export default class App extends Component {
           songDataArray = {songs}
         />
         <Details
-          songDataArray = {songs}
+          songDataArray = {songs[i]}
           // currentSong = {}
         />
       </div>
