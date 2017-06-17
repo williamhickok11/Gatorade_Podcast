@@ -2,6 +2,9 @@ import React from 'react';
 // import ReactMusicPlayer from '.React-Music-Player';\
 // import ReactMusicPlayer from 'react-music-player';
 // <ReactMusicPlayer songs={songs} autoplay />
+// var CLAudioPlayer = require('react-cl-audio-player');
+
+
 
 let songs = [
   {
@@ -24,10 +27,11 @@ let songs = [
 const Details = () => {
   return (
     <div>
-        <h1>Hello</h1>
+        <h1>Details</h1>
     </div>
   );
 };
 
+        // <CLAudioPlayer songs={songs} autoplay />
 
 export default Details;

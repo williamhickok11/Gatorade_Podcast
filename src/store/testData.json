@@ -1,24 +1,23 @@
 {
-  "testData":
-  {
-    "imageDataUrl": "https://ads.w55c.net/t/d/0_FOjz6RQy.jpg?at=0&rtbhost=rtb02-c.us.dataxu.net&btid=NTk0NEI0NTQwMDBFNzY1NDBBMDE3ODAzNjYwMzlBRkN8R0ZTMjhwcmtvRXwxNDk3Njc0ODM3MDMxfDF8MEZ6YWM3cDlyU3wwUlYxeE5NZnEwfGtHS283TmRwMUJaM0xSNXwyNDM1MTQ2Nnx8fHwxNy4wUHxVU0Q&ei=GOOGLE_CONTENTNETWORK&amp;js=0&ob=1&ccw=SUFCWDI5IzAuMTExNTgwNTJ8SUFCMTkjMC4zOTAxMTEwNnxJQUIxOS0xOCMwLjM5MDExMTA2fElBQlgyOCMwLjA&ci=0C5cJW381C&psid=MTQwNDAwNjc3MQ&s=http%3A%2F%2Fwww.tutorialchip.com%2Ftutorials%2F20-incredible-photoshop-tutorials-for-navigation-bar&ts=1497674837060&c=US&r=TN&m=659&pc=37076&epid=R0Mx&amp;mi=d2Vi&wp_exchange=NWP"
-  },
   "songList":
   [
     {
       "artist":"Phonx",
       "title":"tro",
-      "year":"3521"
+      "year":"3521",
+      "imageUrl": "https://ads.w55c.net/t/d/0_FOjz6RQy.jpg?at=0&rtbhost=rtb02-c.us.dataxu.net&btid=NTk0NEI0NTQwMDBFNzY1NDBBMDE3ODAzNjYwMzlBRkN8R0ZTMjhwcmtvRXwxNDk3Njc0ODM3MDMxfDF8MEZ6YWM3cDlyU3wwUlYxeE5NZnEwfGtHS283TmRwMUJaM0xSNXwyNDM1MTQ2Nnx8fHwxNy4wUHxVU0Q&ei=GOOGLE_CONTENTNETWORK&amp;js=0&ob=1&ccw=SUFCWDI5IzAuMTExNTgwNTJ8SUFCMTkjMC4zOTAxMTEwNnxJQUIxOS0xOCMwLjM5MDExMTA2fElBQlgyOCMwLjA&ci=0C5cJW381C&psid=MTQwNDAwNjc3MQ&s=http%3A%2F%2Fwww.tutorialchip.com%2Ftutorials%2F20-incredible-photoshop-tutorials-for-navigation-bar&ts=1497674837060&c=US&r=TN&m=659&pc=37076&epid=R0Mx&amp;mi=d2Vi&wp_exchange=NWP"
     },
     {
-      "artist":"Phonx",
-      "title":"tro",
-      "year":"3521"
+      "artist":"Lift",
+      "title":"big",
+      "year":"3521",
+      "imageUrl": "https://ads.w55c.net/t/d/0_FOjz6RQy.jpg?at=0&rtbhost=rtb02-c.us.dataxu.net&btid=NTk0NEI0NTQwMDBFNzY1NDBBMDE3ODAzNjYwMzlBRkN8R0ZTMjhwcmtvRXwxNDk3Njc0ODM3MDMxfDF8MEZ6YWM3cDlyU3wwUlYxeE5NZnEwfGtHS283TmRwMUJaM0xSNXwyNDM1MTQ2Nnx8fHwxNy4wUHxVU0Q&ei=GOOGLE_CONTENTNETWORK&amp;js=0&ob=1&ccw=SUFCWDI5IzAuMTExNTgwNTJ8SUFCMTkjMC4zOTAxMTEwNnxJQUIxOS0xOCMwLjM5MDExMTA2fElBQlgyOCMwLjA&ci=0C5cJW381C&psid=MTQwNDAwNjc3MQ&s=http%3A%2F%2Fwww.tutorialchip.com%2Ftutorials%2F20-incredible-photoshop-tutorials-for-navigation-bar&ts=1497674837060&c=US&r=TN&m=659&pc=37076&epid=R0Mx&amp;mi=d2Vi&wp_exchange=NWP"
     },
     {
-      "artist":"Phonx",
-      "title":"tro",
-      "year":"3521"
+      "artist":"Reto",
+      "title":"this is a word",
+      "year":"3521",
+      "imageUrl": "https://ads.w55c.net/t/d/0_FOjz6RQy.jpg?at=0&rtbhost=rtb02-c.us.dataxu.net&btid=NTk0NEI0NTQwMDBFNzY1NDBBMDE3ODAzNjYwMzlBRkN8R0ZTMjhwcmtvRXwxNDk3Njc0ODM3MDMxfDF8MEZ6YWM3cDlyU3wwUlYxeE5NZnEwfGtHS283TmRwMUJaM0xSNXwyNDM1MTQ2Nnx8fHwxNy4wUHxVU0Q&ei=GOOGLE_CONTENTNETWORK&amp;js=0&ob=1&ccw=SUFCWDI5IzAuMTExNTgwNTJ8SUFCMTkjMC4zOTAxMTEwNnxJQUIxOS0xOCMwLjM5MDExMTA2fElBQlgyOCMwLjA&ci=0C5cJW381C&psid=MTQwNDAwNjc3MQ&s=http%3A%2F%2Fwww.tutorialchip.com%2Ftutorials%2F20-incredible-photoshop-tutorials-for-navigation-bar&ts=1497674837060&c=US&r=TN&m=659&pc=37076&epid=R0Mx&amp;mi=d2Vi&wp_exchange=NWP"
     }
   ]
 }

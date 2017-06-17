@@ -4,51 +4,40 @@ import SongPicker from './SongPicker';
 import Banner from './Banner';
 import Details from './Details';
 
-const handleClick = function() {
-    console.log("I have handled the click");
-  };
-
 export default class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {data:[],bannerImageData:[]};
-    console.log("props",props);
+    // console.log("props",props);
     // this.handleClick = this.handleClick.bind(this);
-    this.save = this.save.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
-
-  save() {
-    // Change the state here
-    console.log("this is going to update the song", );
-  }
-
-
-
-
-
-  // This binding is necessary to make `this` work in the callback
 
   componentDidMount() {
-    axios.get(this.props.imageUrl)
+    axios.get(this.props.ogPropData)
     .then((result)=> {
       // const thisData = result.data;
+      // console.log("result.data",result.data);
       this.setState({
-        bannerImageData: result.data.testData,
         data: result.data.songList
       });
-      // console.log("this.state number to",this.state);
+      console.log("SONGS after axios",this.state);
     });
   }
 
+  handleClick() {
+    // Change the state here
+    // console.log("this is going to update the song");
+  }
   render() {
+    console.log("data about to be sent as a prop to SongPicker",this.state.data);
     return (
       <div>
         <Banner
-          url = {this.state.bannerImageData.imageUrl}
+          url = {this.state.data.ogPropData}
         />
         <SongPicker
-          onClickProp = {this.save}
+          onClickProp = {this.handleClick}
           songDataArray = {this.state.data}
         />
         <Details />
