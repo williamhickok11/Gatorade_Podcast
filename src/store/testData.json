@@ -1,23 +1,61 @@
+
 {
-  "songList":
-  [
-    {
-      "artist":"Phonx",
-      "title":"tro",
-      "year":"3521",
-      "imageUrl": "https://ads.w55c.net/t/d/0_FOjz6RQy.jpg?at=0&rtbhost=rtb02-c.us.dataxu.net&btid=NTk0NEI0NTQwMDBFNzY1NDBBMDE3ODAzNjYwMzlBRkN8R0ZTMjhwcmtvRXwxNDk3Njc0ODM3MDMxfDF8MEZ6YWM3cDlyU3wwUlYxeE5NZnEwfGtHS283TmRwMUJaM0xSNXwyNDM1MTQ2Nnx8fHwxNy4wUHxVU0Q&ei=GOOGLE_CONTENTNETWORK&amp;js=0&ob=1&ccw=SUFCWDI5IzAuMTExNTgwNTJ8SUFCMTkjMC4zOTAxMTEwNnxJQUIxOS0xOCMwLjM5MDExMTA2fElBQlgyOCMwLjA&ci=0C5cJW381C&psid=MTQwNDAwNjc3MQ&s=http%3A%2F%2Fwww.tutorialchip.com%2Ftutorials%2F20-incredible-photoshop-tutorials-for-navigation-bar&ts=1497674837060&c=US&r=TN&m=659&pc=37076&epid=R0Mx&amp;mi=d2Vi&wp_exchange=NWP"
-    },
-    {
-      "artist":"Lift",
-      "title":"big",
-      "year":"3521",
-      "imageUrl": "https://ads.w55c.net/t/d/0_FOjz6RQy.jpg?at=0&rtbhost=rtb02-c.us.dataxu.net&btid=NTk0NEI0NTQwMDBFNzY1NDBBMDE3ODAzNjYwMzlBRkN8R0ZTMjhwcmtvRXwxNDk3Njc0ODM3MDMxfDF8MEZ6YWM3cDlyU3wwUlYxeE5NZnEwfGtHS283TmRwMUJaM0xSNXwyNDM1MTQ2Nnx8fHwxNy4wUHxVU0Q&ei=GOOGLE_CONTENTNETWORK&amp;js=0&ob=1&ccw=SUFCWDI5IzAuMTExNTgwNTJ8SUFCMTkjMC4zOTAxMTEwNnxJQUIxOS0xOCMwLjM5MDExMTA2fElBQlgyOCMwLjA&ci=0C5cJW381C&psid=MTQwNDAwNjc3MQ&s=http%3A%2F%2Fwww.tutorialchip.com%2Ftutorials%2F20-incredible-photoshop-tutorials-for-navigation-bar&ts=1497674837060&c=US&r=TN&m=659&pc=37076&epid=R0Mx&amp;mi=d2Vi&wp_exchange=NWP"
-    },
-    {
-      "artist":"Reto",
-      "title":"this is a word",
-      "year":"3521",
-      "imageUrl": "https://ads.w55c.net/t/d/0_FOjz6RQy.jpg?at=0&rtbhost=rtb02-c.us.dataxu.net&btid=NTk0NEI0NTQwMDBFNzY1NDBBMDE3ODAzNjYwMzlBRkN8R0ZTMjhwcmtvRXwxNDk3Njc0ODM3MDMxfDF8MEZ6YWM3cDlyU3wwUlYxeE5NZnEwfGtHS283TmRwMUJaM0xSNXwyNDM1MTQ2Nnx8fHwxNy4wUHxVU0Q&ei=GOOGLE_CONTENTNETWORK&amp;js=0&ob=1&ccw=SUFCWDI5IzAuMTExNTgwNTJ8SUFCMTkjMC4zOTAxMTEwNnxJQUIxOS0xOCMwLjM5MDExMTA2fElBQlgyOCMwLjA&ci=0C5cJW381C&psid=MTQwNDAwNjc3MQ&s=http%3A%2F%2Fwww.tutorialchip.com%2Ftutorials%2F20-incredible-photoshop-tutorials-for-navigation-bar&ts=1497674837060&c=US&r=TN&m=659&pc=37076&epid=R0Mx&amp;mi=d2Vi&wp_exchange=NWP"
+"songsList": [
+  {
+    "url": "http://tegos.kz/new/mp3_full/Redfoo_-_New_Thang.mp3",
+    "cover": "http://www.nossoarmario.com/blog/wp-content/uploads/2015/01/redfoo.jpg",
+    "artist": {
+      "name": "Redfoo",
+      "song": "New Thang"
     }
-  ]
+  },
+  {
+    "url": "http://a.tumblr.com/tumblr_lpoc6cHNDP1r0jthjo1.mp3",
+    "cover": "http://www.thailandballoonfestival.com/tibf2013/images/HugoSlider1.jpg",
+    "artist": {
+      "name": "Hugo",
+      "song": "99 Problems"
+    }
+  },
+  {
+    "url": "http://claymore.france.free.fr/momo/summer love.mp3",
+    "cover": "http://myuvn.com/wp-content/uploads/2015/07/justin-timberlake-pusher-love-girl.jpg",
+    "artist": {
+      "name": "Justin Timberlake",
+      "song": "Summer Love"
+    }
+  },
+  {
+    "url": "http://a.tumblr.com/tumblr_mlyactVSyX1qejx3lo1.mp3",
+    "cover": "http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/06/daft-punk.jpg",
+    "artist": {
+      "name": "Daft Punk",
+      "song": "Get Lucky"
+    }
+  },
+  {
+    "url": "http://a.tumblr.com/tumblr_lxe7hpIUPA1r3ne4ro1.mp3",
+    "cover": "http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/06/daft-punk.jpg",
+    "artis": {
+      "name": "Michael Buble",
+      "song": "Feeling Good"
+    }
+  },
+  {
+    "url": "http://dl.tak3da.com/download/1394/03/The Weeknd - Can t Feel My Face [320].mp3",
+    "cover": "http://www.clickgratis.com.br/fotos-imagens/the-weekend/aHR0cDovL3d3dy5iaWxsYm9hcmQuY29tL2ZpbGVzL3N0eWxlcy9wcm9tb182NTAvcHVibGljL21lZGlhL3RoZS13ZWVrZW5kLXRoZS1oaWxscy12aWRlby1iaWxsYm9hcmQtNjUwLmpwZw==.jpg",
+    "artist": {
+      "name": "The Weekend",
+      "song": "Can't Fell My Face"
+    }
+  },
+  {
+    "url": "http://midnightoilco.net/sitebuildercontent/sitebuilderfiles/metallicafuel.mp3",
+    "cover": "http://imagens.ailhadometal.com/2015/03/Metallica3.png",
+    "artist": {
+      "name": "Metallica",
+      "song": "Fuel"
+    }
+  }
+]
 }
