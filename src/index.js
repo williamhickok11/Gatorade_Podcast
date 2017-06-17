@@ -18,9 +18,15 @@ import { render } from 'react-dom';
 import App from './components/App';
 require('./favicon.ico'); // Tell webpack to load favicon.ico
 
+// const trialClick = funcion()  {
+//   console.log("this is a button click")
+// }
 
 render(
-    <App />,
+    <App
+      imageUrl = "store/testData.json"
+      // fireClick = {trialClick}
+    />,
   document.getElementById('app')
 );
 
