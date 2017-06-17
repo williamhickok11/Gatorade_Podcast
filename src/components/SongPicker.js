@@ -29,7 +29,7 @@ class SongPicker extends React.Component {
                   artist={d.artist}
                   title={d.title}
                   year={d.year}
-                  // onClick={}
+                  clickProp={songData.onClickProp}
                 />
               </SongCard>
             );
@@ -49,20 +49,20 @@ const SongCard = ({children}) => {
   );
 };
 
-const SongCardText = ({artist, title, year}) => {
+const SongCardText = ({artist, title, year, clickProp}) => {
   return (
     <div>
       <div>
         <h1>{artist}</h1>
         <h2>{title}</h2>
         <h3>{year}</h3>
+        <button onClick={clickProp} >try me</button>
       </div>
     </div>
   );
 };
 
 // This goes on line 45
-// <button onClick = {onClickProp()} >try me</button>
 
 
 
@@ -71,6 +71,7 @@ SongCardText.propTypes = {
   artist: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   year: PropTypes.string.isRequired,
+  clickProp: PropTypes.func.isRequired,
 };
 SongPicker.propTypes = {
   // url: PropTypes.string.isRequired,

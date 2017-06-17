@@ -9,7 +9,6 @@ export default class App extends Component {
     super(props);
     this.state = {data:[],bannerImageData:[]};
     // console.log("props",props);
-    // this.handleClick = this.handleClick.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -25,10 +24,13 @@ export default class App extends Component {
     });
   }
 
-  handleClick() {
+  handleClick(value, e) {
+    console.log("value",value);
+    console.log("e",e);
     // Change the state here
-    // console.log("this is going to update the song");
+    console.log("this is going to update the song");
   }
+
   render() {
     console.log("data about to be sent as a prop to SongPicker",this.state.data);
     return (

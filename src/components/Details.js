@@ -1,4 +1,5 @@
 import React from 'react';
+// import CLAudioPlayer from 'react-cl-audio-player';
 // import ReactMusicPlayer from '.React-Music-Player';\
 // import ReactMusicPlayer from 'react-music-player';
 // <ReactMusicPlayer songs={songs} autoplay />
@@ -27,11 +28,13 @@ let songs = [
 const Details = () => {
   return (
     <div>
+
+
         <h1>Details</h1>
     </div>
   );
 };
 
-        // <CLAudioPlayer songs={songs} autoplay />
+      // <CLAudioPlayer songs={songs} autoplay />
 
 export default Details;
