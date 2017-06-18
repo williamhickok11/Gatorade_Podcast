@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 const styles = {
   fontFamily: 'sans-serif',
-  width: '47%',
-  marginLeft: '40px',
-  padding: '30px',
+  width: '60%',
+  margin: '30px 0 0 40px',
   float: 'left'
 };
 
@@ -15,24 +14,26 @@ class Details extends React.Component {
     this.state = {
       currentPodcast:this.props.currentPodcast
     };
-    // this.handleClick = this.handleClick.bind(this);
-    console.log("this.state",this.state);
+    console.log("The state in the Details View",this.props);
   }
   render() {
 
     return (
       <div className="detail-view" style={styles}>
-        <div className="banner">
-          <img  src={this.state.currentPodcast.image} alt="" />
-          <p>EPISODE 0{(Number(this.state.currentPodcast.i)+1)}</p>
+
+        <div className="top-controls">
+          <div onClick={()=>this.props.previousButton()}>^ PREVIOUS</div><div onClick={()=>this.props.nextButton()}>NEXT ></div>
         </div>
+
+        <div className="bottom-detail-body">
+          <p className="episode-number">EPISODE 0{(Number(this.state.currentPodcast.i)+1)}</p>
           <h1 style={{color:'#ECD25B'}}>{this.state.currentPodcast.title}</h1>
           <h2>{this.state.currentPodcast.subtitle}</h2>
-          <p>{this.state.currentPodcast.summary}</p>
-          {/*<h4>{this.state.currentPodcast.showNotes}</h4>*/}
-          <div style={{width:'90%', margin:'0 auto'}}>
-            <iframe frameBorder="no" height="200" scrolling="no" src={this.state.currentPodcast.iframeUrl} width="100%" />
+          <p className="detail-text">{this.state.currentPodcast.summary}</p>
+          <div style={{width:'100%', margin:'0px auto'}}>
+            <iframe frameBorder="no" height="150" scrolling="no" src={this.state.currentPodcast.iframeUrl} width="100%" />
           </div>
+        </div>
 
       </div>
     );
