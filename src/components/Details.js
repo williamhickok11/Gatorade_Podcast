@@ -28,7 +28,7 @@ class Details extends React.Component {
         </div>
           <h1 style={{color:'#ECD25B'}}>{this.state.currentPodcast.title}</h1>
           <h2>{this.state.currentPodcast.subtitle}</h2>
-          <h4>{this.state.currentPodcast.summary}</h4>
+          <p>{this.state.currentPodcast.summary}</p>
           {/*<h4>{this.state.currentPodcast.showNotes}</h4>*/}
           <div style={{width:'90%', margin:'0 auto'}}>
             <iframe frameBorder="no" height="200" scrolling="no" src={this.state.currentPodcast.iframeUrl} width="100%" />
