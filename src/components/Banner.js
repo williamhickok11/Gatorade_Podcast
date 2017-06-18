@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Banner = (props) => {
-  console.log("props",props);
+  // console.log("props",props);
 
   const styles = {
     fontFamily: 'sans-serif',

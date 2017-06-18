@@ -6,8 +6,14 @@ import CLAudioPlayer from 'react-cl-audio-player';
 // import ReactMusicPlayer from 'react-music-player';
 // <ReactMusicPlayer songs={songs} autoplay />
 
-import Audio from 'react-audioplayer';
-
+// import Audio from 'react-audioplayer';
+// This goes on line 37
+//<Audio
+  //width={600}
+  //height={400}
+  //autoPlay={true}
+  //playlist={playList}
+///>
 
 
 const styles = {
@@ -22,39 +28,35 @@ const styles = {
 
 class Details extends React.Component {
   constructor(props) {
+    // console.log("props in details constructor",props);
     super(props);
     this.state = {
-      data:this.props.songDataArray
-      // data:[],
-      // bannerImageData:[],
-      // title:"hello title"
+      data:this.props.songDataArray,
+      index:this.props.currentSongIndex
     };
     // console.log("props",props);
     // this.handleClick = this.handleClick.bind(this);
   }
   render() {
-    // let playList = [];
-    // playList.push(this.state.data[0])
-    console.log("this.state.data",this.state.data);
+    let playList = [];
+    playList.push(this.state.data[this.state.index]);
+    console.log("this.state.data",this.state);
     return (
       <div style={styles}>
           <h1>Details</h1>
-          <CLAudioPlayer songs={this.state.data} autoplay />
+          <iframe frameborder="no" height="200" scrolling="no" src="https://player.megaphone.fm/GLT6397330753?" width="100%" />
+
       </div>
     );
   }
 
 }
-          // This goes on line 37
-          // <Audio
-            // width={600}
-            // height={400}
-            // autoPlay={true}
-            // playlist={playList}
-          // />
+
+          // <CLAudioPlayer songs={playList}  />
 
 export default Details;
 
 Details.propTypes = {
-  songDataArray: PropTypes.array.isRequired
+  songDataArray: PropTypes.array.isRequired,
+  currentSongIndex: PropTypes.number.isRequired
 };

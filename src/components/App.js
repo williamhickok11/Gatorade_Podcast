@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
-import SongPicker from './SongPicker';
+import PodPicker from './PodPicker';
 import Banner from './Banner';
 import Details from './Details';
 // const CLAudioPlayer = require ('react-cl-audio-player');
 // import CLAudioPlayer from 'react-cl-audio-player';
 
-let i = 0;
+
+
+let i = 2;
 let songs = [
   {
     index: 0,
@@ -87,6 +89,7 @@ export default class App extends Component {
       //   }
       // }],
       data:[],
+      i:0,
       bannerImageData:[],
       title:"hello title",
       songs: [
@@ -104,39 +107,40 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    // axios.get(this.props.ogPropData)
-    // .then((result)=> {
-    //   console.log("result",result);
-    //   // const thisData = result.data;
-    //   // console.log("result.data",result.data);
-    //   this.setState({
-    //     data: result.data.songList
-    //   });
-    //   console.log("SONGS after axios",this.state);
-    // });
+    axios.get(this.props.ogPropData)
+    .then((result)=> {
+      console.log("result",result);
+      // const thisData = result.data;
+      // console.log("result.data",result.data);
+      this.setState({
+        data: result.data.padcastData
+      });
+      console.log("SONGS after axios",this.state);
+    });
   }
 
-  handleClick(value, e) {
-    console.log("value",value);
-    console.log("e",e);
-    // Change the state here
-    console.log("this is going to update the song");
+  handleClick(artist, title, cover, url, clickProp, i) {
+    // console.log("i",i);
+    this.state.i = i;
+    // console.log("this is new state to update the index", this.state);
   }
 
   render() {
-    console.log("data about to be sent as a prop to SongPicker",this.state.data);
+    console.log("data about to be sent as a prop to PodPicker",this.state.data);
     return (
       <div>
         <Banner
           changeEveryonesState = {this.handleClick}
           data = {songs[i]}
         />
-        <SongPicker
+        <PodPicker
           onClickProp = {this.handleClick}
           songDataArray = {songs}
+          i = {this.state.i}
         />
         <Details
-          songDataArray = {songs[i]}
+          songDataArray = {songs}
+          currentSongIndex = {this.state.i}
           // currentSong = {}
         />
       </div>
