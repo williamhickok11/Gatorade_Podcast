@@ -25,6 +25,7 @@ require('./favicon.ico'); // Tell webpack to load favicon.ico
 render(
     <App
       ogPropData = "store/testData.json"
+      podIndex = {0}
       // fireClick = {trialClick}
     />,
   document.getElementById('app')

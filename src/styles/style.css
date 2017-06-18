@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient( 0deg, #191918, #484533 );
+  color: white;
+}
+.detail-view {
+  background: linear-gradient( 0deg, #272726, #625E48 );
+}
+
+.page-title {
+  width: 50%;
+  margin-left: 20%;
+  text-align: left;
+}
+
+.podcast-list-item {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4 {
+  margin:0 0 10px 0;
+}
+
+p {
+  font-weight: 100;
+}

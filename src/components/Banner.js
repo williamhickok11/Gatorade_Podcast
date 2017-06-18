@@ -7,12 +7,14 @@ const Banner = (props) => {
   const styles = {
     fontFamily: 'sans-serif',
     textAlign: 'center',
-    border: '1px solid black'
+    border: '1px solid black',
+    height: '48px'
   };
 
   return (
     <div style={styles}>
-      <img src={props.data.cover} alt="Smiley face"  />
+
+      {/*<img src={props.data.cover} alt="Smiley face"  />*/}
     </div>
   );
 };
@@ -21,5 +23,5 @@ const Banner = (props) => {
 export default Banner;
 
 Banner.propTypes = {
-  data: PropTypes.object.isRequired,
+  cover: PropTypes.object.isRequired,
 };

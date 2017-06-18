@@ -1,106 +1,62 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import PodPicker from './PodPicker';
-import Banner from './Banner';
 import Details from './Details';
-// const CLAudioPlayer = require ('react-cl-audio-player');
-// import CLAudioPlayer from 'react-cl-audio-player';
 
-
-
-let i = 2;
-let songs = [
+let padcastData = [
   {
-    index: 0,
-    url: 'http://tegos.kz/new/mp3_full/Redfoo_-_New_Thang.mp3',
-    cover: 'http://www.nossoarmario.com/blog/wp-content/uploads/2015/01/redfoo.jpg',
-    artist: {
-      name: 'Redfoo',
-      song: 'New Thang'
-    }
+    i: "0",
+    iframeUrl: "https://player.megaphone.fm/GLT6397330753?",
+    image: "https://www.w3schools.com/html/pic_mountain.jpg",
+    title: "Am I Any Good",
+    subtitle: "this will be a subtitle sentence",
+    summary: "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
+    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
   },
   {
-    index: 1,
-    url: 'http://a.tumblr.com/tumblr_lpoc6cHNDP1r0jthjo1.mp3',
-    cover: 'http://www.thailandballoonfestival.com/tibf2013/images/HugoSlider1.jpg',
-    artist: {
-      name: 'Hugo',
-      song: '99 Problems'
-    }
+    i: "1",
+    iframeUrl: "https://player.megaphone.fm/GLT4745570283?",
+    image: "https://www.w3schools.com/html/pic_mountain.jpg",
+    title: "Am I Any Good",
+    subtitle: "this will be a subtitle sentence",
+    summary: "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
+    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
   },
   {
-    index: 2,
-    url: 'http://claymore.france.free.fr/momo/summer love.mp3',
-    cover: 'http://myuvn.com/wp-content/uploads/2015/07/justin-timberlake-pusher-love-girl.jpg',
-    artist: {
-      name: 'Justin Timberlake',
-      song: 'Summer Love'
-    }
+    i: "2",
+    iframeUrl: "https://player.megaphone.fm/GLT7925598534?",
+    image: "https://www.w3schools.com/html/pic_mountain.jpg",
+    title: "Am I Any Good",
+    subtitle: "this will be a subtitle sentence",
+    summary: "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
+    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
   },
   {
-    index: 3,
-    url: 'http://a.tumblr.com/tumblr_mlyactVSyX1qejx3lo1.mp3',
-    cover: 'http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/06/daft-punk.jpg',
-    artist: {
-      name: 'Daft Punk',
-      song: 'Get Lucky'
-    }
+    i: "3",
+    iframeUrl: "https://player.megaphone.fm/GLT7199909723?",
+    image: "https://www.w3schools.com/html/pic_mountain.jpg",
+    title: "Am I Any Good",
+    subtitle: "this will be a subtitle sentence",
+    summary: "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
+    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
   },
   {
-    index: 4,
-    url: 'http://a.tumblr.com/tumblr_lxe7hpIUPA1r3ne4ro1.mp3',
-    cover: 'http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/06/daft-punk.jpg',
-    artist: {
-      name: 'Michael Buble',
-      song: 'Feeling Good'
-    }
-  },
-  {
-    index: 5,
-    url: 'http://dl.tak3da.com/download/1394/03/The Weeknd - Can t Feel My Face [320].mp3',
-    cover: 'http://www.clickgratis.com.br/fotos-imagens/the-weekend/aHR0cDovL3d3dy5iaWxsYm9hcmQuY29tL2ZpbGVzL3N0eWxlcy9wcm9tb182NTAvcHVibGljL21lZGlhL3RoZS13ZWVrZW5kLXRoZS1oaWxscy12aWRlby1iaWxsYm9hcmQtNjUwLmpwZw==.jpg',
-    artist: {
-      name: 'The Weekend',
-      song: 'Can\'t Fell My Face'
-    }
-  },
-  {
-    index: 6,
-    url: 'http://midnightoilco.net/sitebuildercontent/sitebuilderfiles/metallicafuel.mp3',
-    cover: 'http://imagens.ailhadometal.com/2015/03/Metallica3.png',
-    artist: {
-      name: 'Metallica',
-      song: 'Fuel'
-    }
+    i: "4",
+    iframeUrl: "https://player.megaphone.fm/GLT1756743900?",
+    image: "https://www.w3schools.com/html/pic_mountain.jpg",
+    title: "Am I Any Good",
+    subtitle: "this will be a subtitle sentence",
+    summary: "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
+    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
   }
 ];
-
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // data:[{
-      //   url: "",
-      //   cover: "",
-      //   artist: {
-      //     name: "",
-      //     song: ""
-      //   }
-      // }],
-      data:[],
-      i:0,
-      bannerImageData:[],
-      title:"hello title",
-      songs: [
-        {
-          url: 'path/to/your/mp3',
-          artist: {
-            name: 'X Japan',
-            song: 'Art of Life'
-          }
-        }
-      ]
+      podData:[],
+      index:"",
     };
     // console.log("props",props);
     this.handleClick = this.handleClick.bind(this);
@@ -109,39 +65,34 @@ export default class App extends Component {
   componentDidMount() {
     axios.get(this.props.ogPropData)
     .then((result)=> {
-      console.log("result",result);
-      // const thisData = result.data;
-      // console.log("result.data",result.data);
       this.setState({
-        data: result.data.padcastData
+        podData: result.data.padcastData
       });
-      console.log("SONGS after axios",this.state);
+      // console.log("data after axios",this.state);
     });
   }
 
-  handleClick(artist, title, cover, url, clickProp, i) {
-    // console.log("i",i);
-    this.state.i = i;
-    // console.log("this is new state to update the index", this.state);
+  handleClick(i) {
+    // this should render the new iframe, but it is not
+    // this.setState({
+    //   index:i,
+    // });
+    this.state.index = i;
+    console.log("this is new state to update the index", this.state);
   }
 
   render() {
-    console.log("data about to be sent as a prop to PodPicker",this.state.data);
+    // console.log("data about to be sent as a prop to PodPicker",this.state);
     return (
       <div>
-        <Banner
-          changeEveryonesState = {this.handleClick}
-          data = {songs[i]}
-        />
         <PodPicker
           onClickProp = {this.handleClick}
-          songDataArray = {songs}
-          i = {this.state.i}
+          podDataArray = {this.state.podData}
         />
         <Details
-          songDataArray = {songs}
-          currentSongIndex = {this.state.i}
-          // currentSong = {}
+          // This renders before the state is set, I need to fix that
+          // currentPodcast = {this.state.podData[i]}
+          currentPodcast = {padcastData[this.props.podIndex]}
         />
       </div>
     );
@@ -149,6 +100,6 @@ export default class App extends Component {
 }
 
 App.propTypes = {
-  // store: PropTypes.object.isRequired,
-  // history: PropTypes.object.isRequired
+  podIndex: PropTypes.number.isRequired,
+  ogPropData: PropTypes.string.isRequired
 };

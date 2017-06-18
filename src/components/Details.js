@@ -1,62 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CLAudioPlayer from 'react-cl-audio-player';
-
-// This is the new one (I think)
-// import ReactMusicPlayer from 'react-music-player';
-// <ReactMusicPlayer songs={songs} autoplay />
-
-// import Audio from 'react-audioplayer';
-// This goes on line 37
-//<Audio
-  //width={600}
-  //height={400}
-  //autoPlay={true}
-  //playlist={playList}
-///>
-
 
 const styles = {
   fontFamily: 'sans-serif',
-  textAlign: 'center',
-  border: '1px solid black',
-  width: '40%',
-  // width: '40%',
-  float: 'right'
+  width: '47%',
+  marginLeft: '40px',
+  padding: '30px',
+  float: 'left'
 };
-
 
 class Details extends React.Component {
   constructor(props) {
-    // console.log("props in details constructor",props);
     super(props);
     this.state = {
-      data:this.props.songDataArray,
-      index:this.props.currentSongIndex
+      currentPodcast:this.props.currentPodcast
     };
-    // console.log("props",props);
     // this.handleClick = this.handleClick.bind(this);
+    console.log("this.state",this.state);
   }
   render() {
-    let playList = [];
-    playList.push(this.state.data[this.state.index]);
-    console.log("this.state.data",this.state);
+
     return (
-      <div style={styles}>
-          <h1>Details</h1>
-          <iframe frameborder="no" height="200" scrolling="no" src="https://player.megaphone.fm/GLT6397330753?" width="100%" />
+      <div className="detail-view" style={styles}>
+        <div className="banner">
+          <img  src={this.state.currentPodcast.image} alt="" />
+          <p>EPISODE 0{(Number(this.state.currentPodcast.i)+1)}</p>
+        </div>
+          <h1 style={{color:'#ECD25B'}}>{this.state.currentPodcast.title}</h1>
+          <h2>{this.state.currentPodcast.subtitle}</h2>
+          <h4>{this.state.currentPodcast.summary}</h4>
+          {/*<h4>{this.state.currentPodcast.showNotes}</h4>*/}
+          <div style={{width:'90%', margin:'0 auto'}}>
+            <iframe frameBorder="no" height="200" scrolling="no" src={this.state.currentPodcast.iframeUrl} width="100%" />
+          </div>
 
       </div>
     );
   }
-
 }
-
-          // <CLAudioPlayer songs={playList}  />
 
 export default Details;
 
 Details.propTypes = {
-  songDataArray: PropTypes.array.isRequired,
-  currentSongIndex: PropTypes.number.isRequired
+  currentPodcast: PropTypes.object.isRequired
 };
