@@ -1,13 +1,13 @@
 /* MAIN */
 @font-face {
-    font-family: GraublauWeb;
-    src: url("./imgs/Gatorade Black.otf") format("opentype");
+    font-family: GatoradeBlack;
+    src: url("../imgs/Gatorade Black.otf") format("opentype");
 }
 
 @font-face {
-    font-family: GraublauWeb;
+    font-family: GatoradeBlack;
     font-weight: bold;
-    src: url("./imgs/Gatorade Black.otf") format("opentype");
+    src: url("../imgs/Gatorade Black.otf") format("opentype");
 }
 
 body {
@@ -19,17 +19,32 @@ body {
   max-width:1000px;
   margin:0 auto;
 }
-h1, h2, h3, h4 {
+h1 {
+  font-family: 'GatoradeBlack', monospace;
+}
+h1, h2, h3, h4, h6 {
   margin:0 0 10px 0;
 }
 p {
   font-weight: 100;
   margin: 0;
+  font-size: 14px;
+  line-height: 150%;
 }
+
 
 /* BANNER */
 .banner-main {
   background: linear-gradient( 0deg, #3C3A2C, #353124 );
+  font-family: sans-serif;
+  height: 177px;
+  display: block;
+}
+.banner-main img {
+  margin-left: 20px;
+}
+.banner-title {
+  margin:
 }
 .page-title {
   display: inline-block;
@@ -61,17 +76,25 @@ p {
   cursor: pointer;
 }
 .top-controls div:last-child {
-  text-align: right;
+  text-align: center;
 }
 .bottom-detail-body {
+  margin-top: 25px;
   width: 90%;
 }
+.bottom-detail-body h1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #ECD25B;
+}
 .episode-number {
+  letter-spacing: 4px;
   margin: 30px 0;
 }
-.detail-view h1, p {
+.detail-view p {
   margin: 0;
   font-family: 'Source Code Pro', monospace;
+  color: #DADAD8;
 }
 .detail-view h2 {
   font-family: 'Source Code Pro', monospace;
@@ -92,10 +115,16 @@ p {
   cursor: pointer;
 }
 .pod-picker-loop-div {
-  height: 75px;
+  height: 50px;
 }
 .pod-picker-top {
-  height: 75px;
+  height: 100px;
+}
+.pod-picker-top h4 {
+  margin-bottom: 25px;
+}
+.pod-picker-left {
+  color: #DADAD8;
 }
 
 

@@ -37,14 +37,11 @@ class PodPicker extends React.Component {
     // console.log("state",this.state)
     return (
       <div style={styles}>
-
         <div style={{width: '80%', margin: '20px auto', marginTop: '100px'}}>
-
           <div className="pod-picker-left" style={{display: 'inline-block', width: '30%', float:'left'}}>
             <div className="pod-picker-top">
               <h4>PG</h4>
             </div>
-
             <div className="pod-picker-bottom">
               <div className="pod-picker-inner-left" style={{display: 'inline-block', width: '20%', float:'left'}}>
                 <h4>EP</h4>
@@ -62,11 +59,14 @@ class PodPicker extends React.Component {
               </div>
             </div>
           </div>
-
           <div className="pod-picker-right" style={{borderLeft: '1px solid white', display: 'inline-block',  width: '60%', paddingLeft:'20px'}}>
             <div className="pod-picker-top">
-              <h4>Intro</h4>
-              <h4>About</h4>
+              <div>
+                <h4 onClick={this.props.introViewButton}>INTRO</h4>
+              </div>
+              <div>
+                <h4>ABOUT</h4>
+              </div>
             </div>
             <div style={{display: 'inline-block'}}>
               {
@@ -84,9 +84,7 @@ class PodPicker extends React.Component {
               }
             </div>
           </div>
-
         </div>
-
       </div>
     );
   }
@@ -102,6 +100,7 @@ PodCardText.propTypes = {
 PodPicker.propTypes = {
   onClickProp: PropTypes.func.isRequired,
   podDataArray: PropTypes.array.isRequired,
+  introViewButton: PropTypes.func.isRequired,
 };
 
 export default PodPicker;

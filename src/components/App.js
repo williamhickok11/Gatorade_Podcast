@@ -40,12 +40,20 @@ let podcastData = [
   },
   {
     i: "4",
+    iframeUrl: "https://player.megaphone.fm/GLT7925598534?",
+    title: "Here is a Title",
+    subtitle: "this will be a subtitle sentence",
+    summary: "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
+    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
+  },
+  {
+    i: "5",
     iframeUrl: "https://player.megaphone.fm/GLT1756743900?",
     title: "Very Last Title",
     subtitle: "this will be a subtitle sentence",
     summary: "This is a summary. It will probably take up a few sentences. Note to self that I need to write more words in a summary. This will be the last sentence to explain the significance of this section",
     showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  }
+  },
 ];
 
 export default class App extends Component {
@@ -61,6 +69,7 @@ export default class App extends Component {
     this.selectPodButton = this.selectPodButton.bind(this);
     this.nextButton = this.nextButton.bind(this);
     this.previousButton = this.previousButton.bind(this);
+    this.introViewButton = this.introViewButton.bind(this);
   }
 
   componentDidMount() {
@@ -93,13 +102,18 @@ export default class App extends Component {
   }
 
   selectPodButton(i) {
-    // this should render the new iframe, but it is not
     this.setState({
       currenView: "player",
       index: parseInt(i),
       currentPodcast: this.state.podData[parseInt(i)]
     });
-    console.log("this is new state to update the index", this.state);
+  }
+
+  introViewButton() {
+    console.log("lhelll");
+    this.setState({
+      currenView: "intro"
+    });
   }
 
   render() {
@@ -111,6 +125,7 @@ export default class App extends Component {
         <div style={{display:'inline-block'}}>
           <PodPicker
             onClickProp = {this.selectPodButton}
+            introViewButton = {this.introViewButton}
             podDataArray = {this.state.podData}
           />
           <Details

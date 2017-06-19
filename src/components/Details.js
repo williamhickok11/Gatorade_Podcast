@@ -31,10 +31,10 @@ class Details extends React.Component {
           </div>
           <div className="bottom-detail-body">
             <p className="episode-number">EPISODE 0{(Number(this.props.currentPodcast.i)+1)}</p>
-            <h1 style={{color:'#ECD25B'}}>{this.props.currentPodcast.title}</h1>
+            <h1>{this.props.currentPodcast.title}</h1>
             <h2>{this.props.currentPodcast.subtitle}</h2>
             <p className="detail-text">{this.props.currentPodcast.summary}</p>
-            <div style={{width:'100%', margin:'0px auto'}}>
+            <div style={{width:'100%', margin:'20px auto'}}>
               <iframe frameBorder="no" height="150" scrolling="no" src={this.props.currentPodcast.iframeUrl} width="100%" />
             </div>
           </div>
