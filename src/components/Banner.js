@@ -16,13 +16,17 @@ const Banner = () => {
   return (
     <div className="banner-main" style={styles}>
       <div style={innerBannerWrapper}>
-        <div className="page-title" style={{display:'inline-block', float:'left'}}>
+        <div className="page-title">
           <h1>The <br />
               Secret<br />
               <sup><u>To</u></sup> Victory</h1>
           <h6>From <strong>Gatorade</strong></h6>
         </div>
-        <img style={{display:'inline-block', float:'right'}} src="http://www.conceptcarz.com/images/Mercury/69_Mercury-Marauder-X-100-Image-01-1600.jpg" alt="Smiley face" height="100" width="400" />
+        <div className="banner-image"/>
+        <img style={{display:'inline-block', float:'left', 'boxShadow': '0 0 8px 8px white inset'}} src="./imgs/score-board.png" alt="Smiley face" width="600" />
+        <div className="gatorade-logo">
+          <img src="./imgs/Logo_Gatorade.svg" alt="Smiley face"  />
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,23 @@
 /* MAIN */
+@font-face {
+    font-family: GraublauWeb;
+    src: url("./imgs/Gatorade Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url("./imgs/Gatorade Black.otf") format("opentype");
+}
+
 body {
   background: linear-gradient( 0deg, #191918, #484533 );
   color: #F8F8F8;
   margin: 0;
 }
-.banner-main {
-  background: linear-gradient( 0deg, #3C3A2C, #353124 );
+.main-container {
+  max-width:1000px;
+  margin:0 auto;
 }
 h1, h2, h3, h4 {
   margin:0 0 10px 0;
@@ -14,6 +26,29 @@ p {
   font-weight: 100;
   margin: 0;
 }
+
+/* BANNER */
+.banner-main {
+  background: linear-gradient( 0deg, #3C3A2C, #353124 );
+}
+.page-title {
+  display: inline-block;
+  float:left;
+  margin-right: 15px;
+}
+.gatorade-logo img {
+  margin: 20px 0 0 50px;
+}
+
+/* This is for the faded img */
+/*.banner-image {
+  background-image: url('../imgs/score-board.png');
+  height: 700px;
+  box-shadow: 0 0 8px 8px white inset;
+  display: inline-block;
+  float:'left'
+}*/
+
 
 
 /* DETAIL COMPONENT */
@@ -44,6 +79,11 @@ p {
 }
 .detail-text {
   padding: 15px 0;
+}
+.intro-image-div img {
+  display: inline-block;
+  height: 50px;
+  padding: 25px 40px 0 0 ;
 }
 
 
@@ -85,33 +125,6 @@ p {
 /*font-family: 'Source Code Pro', monospace;*/
 /*bottom left:413E2F*/
 /*top right:353124*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

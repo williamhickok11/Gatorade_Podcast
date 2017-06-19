@@ -11,7 +11,7 @@ const Banner = () => {
 
   return (
     <div className="intro-main" style={styles}>
-      <h1>Each Episode Bla bla</h1>
+      <h1>Each Episode will start with the sound from a game.</h1>
       <p>This is aosgjop gjj eng hi.sa hhoknfHtoThis is aosgjop gjj eng hi.sa hhoknfHtoThis is aosgjop gjj eng hi.sa hhoknfHtoThis is aosgjop gjj eng hi.sa hhoknfHtoThis is aosgjop gjj eng hi.sa hhoknfHto</p>
       <div className="intro-image-div">
         <img style="display:'inline-block, height:'25px'" src="" alt="" />
