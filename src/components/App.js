@@ -9,7 +9,7 @@ let podcastData = [
   {
     i: "0",
     iframeUrl: "https://player.megaphone.fm/GLT6397330753?",
-    title: "Am I Any Good?",
+    title: "AM I ANY GOOD?",
     subtitle: "with JJ Watt, of the Houston Texans",
     summary: "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
     showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
@@ -65,7 +65,6 @@ export default class App extends Component {
       currentPodcast: podcastData[0],
       currenView: "intro"
     };
-    // console.log("props",props);
     this.selectPodButton = this.selectPodButton.bind(this);
     this.nextButton = this.nextButton.bind(this);
     this.previousButton = this.previousButton.bind(this);
@@ -91,7 +90,6 @@ export default class App extends Component {
       });
     }
   }
-
   previousButton(i) {
     if (i > 0) {
       this.setState({
@@ -100,7 +98,6 @@ export default class App extends Component {
       });
     }
   }
-
   selectPodButton(i) {
     this.setState({
       currenView: "player",
@@ -108,21 +105,18 @@ export default class App extends Component {
       currentPodcast: this.state.podData[parseInt(i)]
     });
   }
-
   introViewButton() {
-    console.log("lhelll");
     this.setState({
       currenView: "intro"
     });
   }
 
   render() {
-    console.log("data about to be sent as a prop to PodPicker and Details",this.state);
     return (
       <div className="main-container">
         <Banner />
         <hr style={{height:'8px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', margin:'0 auto', width:'90%'}} />
-        <div style={{display:'inline-block'}}>
+        <div>
           <PodPicker
             onClickProp = {this.selectPodButton}
             introViewButton = {this.introViewButton}

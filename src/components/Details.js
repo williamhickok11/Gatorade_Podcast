@@ -1,31 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const styles = {
-  fontFamily: 'sans-serif',
-  width: '60%',
-  margin: '30px 0 0 40px',
-  float: 'left'
-};
-
 class Details extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   currentPodcast:this.props.currentPodcast
-    // };
-    // console.log("The state in the Details View",this.props);
   }
   render() {
-    // console.log("this.state",this.state);
-    console.log("this.props",this.props);
     return (
-      <div className="detail-view" style={styles}>
-
-
+      <div className="detail-view">
       {
       this.props.currentView === "player" &&
-        <div>
+        <div className="player-controls-main">
           <div className="top-controls">
             <div onClick={()=>this.props.previousButton(this.props.index)}>^ PREVIOUS</div><div onClick={()=>this.props.nextButton(this.props.index)}>NEXT ></div>
           </div>
@@ -42,23 +27,17 @@ class Details extends React.Component {
       }
       {
       this.props.currentView === "intro" &&
-        <div>
-          <h1 style={{color:'#ECD25B', width:'65%', paddingTop:'25px'}}>Each Episode will start with the sound from a game.</h1>
-          <p style={{padding:'15px 0'}}>This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. </p>
+        <div className="intro-main">
+          <h1 className="intro-header">EACH EPISODE WILL START WITH THE SOUND FROM A GAME.</h1>
+          <p>This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. </p>
           <div className="intro-image-div">
-            <img src="./imgs/Badge_Apple.svg" alt="" />
-            <img src="./imgs/Badge_Spotify.svg" alt="" />
-            <img src="./imgs/Badge_Google_Play.svg" alt="" />
+            <a href="https://www.google.com"><img src="./imgs/Badge_Apple.svg" alt="" /></a>
+            <a href="https://www.google.com"><img src="./imgs/Badge_Spotify.svg" alt="" /></a>
+            <a href="https://www.google.com"><img src="./imgs/Badge_Google_Play.svg" alt="" /></a>
           </div>
         </div>
       }
-
-
       </div>
-
-
-
-
     );
   }
 }
@@ -67,6 +46,8 @@ export default Details;
 
 Details.propTypes = {
   currentPodcast: PropTypes.object.isRequired,
+  previousButton: PropTypes.func.isRequired,
   nextButton: PropTypes.func.isRequired,
-  previousButton: PropTypes.func.isRequired
+  currentView: PropTypes.string.isRequired,
+  index: PropTypes.string.isRequired,
 };

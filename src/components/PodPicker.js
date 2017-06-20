@@ -1,16 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const styles = {
-  display: 'inline-block',
-  fontFamily: '"Source Code Pro", monospace',
-  width: '35%',
-  float: 'left',
-};
-
 const PodCard = ({children}) => {
   return (
-    <div className="pod-picker-loop-div" style={{}}>
+    <div className="pod-picker-loop-div">
       {children}
     </div>
   );
@@ -28,25 +21,21 @@ class PodPicker extends React.Component {
   constructor(props) {
     super(props);
     this.state = {data:[]};
-    // console.log("All my song in the PodPicker",props);
   }
 
   render() {
-    // const songData = this.props;
-    // console.log("podData inside PodPicker render",this.props);
-    // console.log("state",this.state)
     return (
-      <div style={styles}>
-        <div style={{width: '80%', margin: '20px auto', marginTop: '100px'}}>
-          <div className="pod-picker-left" style={{display: 'inline-block', width: '30%', float:'left'}}>
+      <div className="pod-picker-main-outer">
+        <div className="pod-picker-main-inner">
+          <div className="pod-picker-left">
             <div className="pod-picker-top">
               <h4>PG</h4>
             </div>
             <div className="pod-picker-bottom">
-              <div className="pod-picker-inner-left" style={{display: 'inline-block', width: '20%', float:'left'}}>
+              <div className="pod-picker-inner-left">
                 <h4>EP</h4>
               </div>
-              <div className="pod-picker-inner-right" style={{display: 'inline-block', width: '50%', float:'right'}}>
+              <div className="pod-picker-inner-right">
                 {
                   this.props.podDataArray.map((d, i) => {
                     return (
@@ -59,16 +48,16 @@ class PodPicker extends React.Component {
               </div>
             </div>
           </div>
-          <div className="pod-picker-right" style={{borderLeft: '1px solid white', display: 'inline-block',  width: '60%', paddingLeft:'20px'}}>
+          <div className="pod-picker-right">
             <div className="pod-picker-top">
               <div>
-                <h4 onClick={this.props.introViewButton}>INTRO</h4>
+                <h3 onClick={this.props.introViewButton}>INTRO</h3>
               </div>
               <div>
-                <h4>ABOUT</h4>
+                <h3>ABOUT</h3>
               </div>
             </div>
-            <div style={{display: 'inline-block'}}>
+            <div className="pod-picker-selector">
               {
                 this.props.podDataArray.map((d, i) => {
                   return (
