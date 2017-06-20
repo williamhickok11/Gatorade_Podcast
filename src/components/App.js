@@ -5,65 +5,14 @@ import PodPicker from './PodPicker';
 import Details from './Details';
 import Footer from './Footer';
 
-let podcastData = [
-  {
-    i: "0",
-    iframeUrl: "https://player.megaphone.fm/GLT6397330753?",
-    title: "AM I ANY GOOD?",
-    subtitle: "with JJ Watt, of the Houston Texans",
-    summary: "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
-  {
-    i: "1",
-    iframeUrl: "https://player.megaphone.fm/GLT4745570283?",
-    title: "This Is Title 2",
-    subtitle: "this will be a subtitle sentence",
-    summary: "This will be the last sentence to explain the significance of this section This is a summary. It will probably take up a few sentences. ",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
-  {
-    i: "2",
-    iframeUrl: "https://player.megaphone.fm/GLT7925598534?",
-    title: "Here is a Title",
-    subtitle: "this will be a subtitle sentence",
-    summary: "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
-  {
-    i: "3",
-    iframeUrl: "https://player.megaphone.fm/GLT7199909723?",
-    title: "Different Title",
-    subtitle: "this will be a subtitle sentence",
-    summary: "Note to self that I need to write more words in a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
-  {
-    i: "4",
-    iframeUrl: "https://player.megaphone.fm/GLT7925598534?",
-    title: "Here is a Title",
-    subtitle: "this will be a subtitle sentence",
-    summary: "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
-  {
-    i: "5",
-    iframeUrl: "https://player.megaphone.fm/GLT1756743900?",
-    title: "Very Last Title",
-    subtitle: "this will be a subtitle sentence",
-    summary: "This is a summary. It will probably take up a few sentences. Note to self that I need to write more words in a summary. This will be the last sentence to explain the significance of this section",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
-];
-
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      podData: podcastData,
-      index:"0",
-      currentPodcast: podcastData[0],
-      currenView: "intro"
+      podData: [],
+      index:"",
+      currentPodcast: {},
+      currenView: ""
     };
     this.selectPodButton = this.selectPodButton.bind(this);
     this.nextButton = this.nextButton.bind(this);
@@ -72,16 +21,18 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    // THIS IS TO REPLACE LINE 54
-    // axios.get(this.props.ogPropData)
-    // .then((result)=> {
-    //   this.setState({
-    //     podData: result.data.padcastData
-    //   });
-      // console.log("data after axios",this.state);
-    // });
+    axios.get(this.props.apiCall)
+    .then((result)=> {
+      this.setState({
+        podData: result.data.padcastData,
+        index:"0",
+        currentPodcast: result.data.padcastData[0],
+        currenView: "intro"
+      });
+    });
   }
 
+  // define all functions (click events)
   nextButton(i) {
     if (i <= 4) {
       this.setState({
@@ -114,17 +65,17 @@ export default class App extends Component {
   render() {
     return (
       <div className="main-container">
+        <img src="http://pepsico.demdex.net/event?d_sid=8045028" width="0" height="0" />
         <Banner />
         <hr className="banner-hr" style={{height:'8px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', margin:'0 auto', width:'90%'}} />
         <hr className="banner-hr-mobile" style={{height:'5px', border:'none', color:'white', backgroundColor:'white', margin:'0 auto', width:'100%', position:'relative', top: '-55px'}} />
-        <div>
+        <div className="main-body">
           <PodPicker
             onClickProp = {this.selectPodButton}
             introViewButton = {this.introViewButton}
             podDataArray = {this.state.podData}
           />
           <Details
-            // This renders before the state is set, I need to fix that
             currentView = {this.state.currenView}
             currentPodcast = {this.state.currentPodcast}
             nextButton = {this.nextButton}
@@ -140,5 +91,5 @@ export default class App extends Component {
 }
 
 App.propTypes = {
-  ogPropData: PropTypes.string.isRequired
+  apiCall: PropTypes.string.isRequired
 };

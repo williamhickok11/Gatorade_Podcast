@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Banner = () => {
-
-
   return (
     <div className="banner-main">
       <div className="innerBannerWrapper">
@@ -19,6 +17,5 @@ const Banner = () => {
     </div>
   );
 };
-
 
 export default Banner;

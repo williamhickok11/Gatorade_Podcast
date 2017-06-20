@@ -20,7 +20,6 @@ const PodCardText = ({title, clickProp, i}) => {
 class PodPicker extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {data:[]};
   }
 
   render() {
