@@ -38,22 +38,22 @@ let podcastData = [
     summary: "Note to self that I need to write more words in a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
     showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
   },
-  {
-    i: "4",
-    iframeUrl: "https://player.megaphone.fm/GLT7925598534?",
-    title: "Here is a Title",
-    subtitle: "this will be a subtitle sentence",
-    summary: "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
-  {
-    i: "5",
-    iframeUrl: "https://player.megaphone.fm/GLT1756743900?",
-    title: "Very Last Title",
-    subtitle: "this will be a subtitle sentence",
-    summary: "This is a summary. It will probably take up a few sentences. Note to self that I need to write more words in a summary. This will be the last sentence to explain the significance of this section",
-    showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
-  },
+  // {
+  //   i: "4",
+  //   iframeUrl: "https://player.megaphone.fm/GLT7925598534?",
+  //   title: "Here is a Title",
+  //   subtitle: "this will be a subtitle sentence",
+  //   summary: "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
+  //   showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
+  // },
+  // {
+  //   i: "5",
+  //   iframeUrl: "https://player.megaphone.fm/GLT1756743900?",
+  //   title: "Very Last Title",
+  //   subtitle: "this will be a subtitle sentence",
+  //   summary: "This is a summary. It will probably take up a few sentences. Note to self that I need to write more words in a summary. This will be the last sentence to explain the significance of this section",
+  //   showNotes: "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. "
+  // },
 ];
 
 export default class App extends Component {

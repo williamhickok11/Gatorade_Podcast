@@ -74,13 +74,27 @@ class PodPicker extends React.Component {
             </div>
           </div>
         </div>
+
+        {/**** MOBILE VIEW ****/}
+        <div className="pod-picker-main-inner-mobile">
+          {
+            this.props.podDataArray.map((d, i) => {
+              return (
+                <div key={i} className="pod-picker-loop-div-mobile" onClick={()=>this.props.onClickProp(i)}>
+                  <p>0{i+1}</p>
+                </div>
+              );
+            })
+          }
+        </div>
+
       </div>
     );
   }
 }
 
 
-// Just for validation
+{/**** Just for validation ****/}
 PodCardText.propTypes = {
   i: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

@@ -50,7 +50,7 @@ p {
   margin-left: 20px;
 }
 .banner-title {
-  margin:
+  /*margin:*/
 }
 .page-title {
   display: inline-block;
@@ -183,10 +183,19 @@ p {
   color: #ECD25B;;
 }
 
+
 /* MEDIA QUERIES */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .intro-main {
-    padding: 25px;
+    padding: 0 25px 25px 25px;
+  }
+  .banner-title {
+    background: red;
+  }
+  .gatorade-logo img {
+    position: relative;
+    top: -140px;
+    left: 20px;
   }
   .intro-header {
     width: 100%;
@@ -205,9 +214,37 @@ p {
     margin: 20px 10px 0 0;
     height: 60px;
   }
+  .pod-picker-main-inner {
+    display: none
+  }
+  .pod-picker-main-inner-mobile {
+    display: inline-block;
+  }
+  .pod-picker-main-outer {
+    width: 100vw;
+    overflow-x: scroll;
+  }
+  .pod-picker-loop-div-mobile {
+    display: inline-block;
+  }
+  .pod-picker-loop-div-mobile p {
+    margin: 30px;
+  }
+  .top-controls {
+    display: none;
+  }
+  .bottom-detail-body {
+    margin: 25px;
+    width: 100%;
+  }
 }
+
 @media only screen and (min-device-width : 480px) {
-  .intro-main {
+  .pod-picker-main-inner-mobile {
+    display: none;
+  }
+  .pod-picker-main-inner {
+    display: inline-block;
   }
 }
 
