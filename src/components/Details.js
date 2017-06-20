@@ -29,7 +29,7 @@ class Details extends React.Component {
       this.props.currentView === "intro" &&
         <div className="intro-main">
           <h1 className="intro-header">EACH EPISODE WILL START WITH THE SOUND FROM A GAME.</h1>
-          <p>This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. This is a long sentence that I am going to have to duplicat multiple times. </p>
+          <p>It’s one moment. It’s there and then it’s gone. In sports, losing takes a split second. Some losses are routine and some are transformative. This is a podcast series about the loss that changed everything for an athlete. Because there’s always a riveting story in the moments before and after that loss.</p>
           <div className="intro-image-div">
             <a href="https://www.google.com"><img src="./imgs/Badge_Apple.svg" alt="" /></a>
             <a href="https://www.google.com"><img src="./imgs/Badge_Spotify.svg" alt="" /></a>

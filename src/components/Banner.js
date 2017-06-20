@@ -2,16 +2,14 @@ import React from 'react';
 
 const Banner = () => {
 
-  const innerBannerWrapper = {
-    padding: '20px'
-  };
 
   return (
     <div className="banner-main">
-      <div style={innerBannerWrapper}>
+      <div className="innerBannerWrapper">
         <div className="page-title">
           <div className="banner-title">
-            <img src="./imgs/Gatorade-Main-Title.png" alt="Smiley face"  width="225px" />
+            <img className="main-title" src="./imgs/Gatorade-Main-Title.png" alt="Smiley face" />
+            <img className="main-title-mobile" src="./imgs/Title-Mobile.png" alt="Smiley face" />
           </div>
         </div>
         <div className="gatorade-logo">

@@ -77,11 +77,20 @@ class PodPicker extends React.Component {
 
         {/**** MOBILE VIEW ****/}
         <div className="pod-picker-main-inner-mobile">
+          <div className="pod-picker-loop-div-mobile ppld-mobile">
+            <p onClick={this.props.introViewButton}>INTRO</p>
+            <div className="verticle-line" />
+          </div>
+          <div className="pod-picker-loop-div-mobile ppld-mobile">
+            <p>ABOUT</p>
+            <div className="verticle-line" />
+          </div>
           {
             this.props.podDataArray.map((d, i) => {
               return (
                 <div key={i} className="pod-picker-loop-div-mobile" onClick={()=>this.props.onClickProp(i)}>
                   <p>0{i+1}</p>
+                  <div className="verticle-line" />
                 </div>
               );
             })
