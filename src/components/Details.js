@@ -12,7 +12,7 @@ class Details extends React.Component {
       this.props.currentView === "player" &&
         <div className="player-controls-main">
           <div className="top-controls">
-            <div onClick={()=>this.props.previousButton(this.props.index)}>^ PREVIOUS</div><div onClick={()=>this.props.nextButton(this.props.index)}>NEXT ></div>
+            <div onClick={()=>this.props.goToPreviousPod(this.props.index)}>^ PREVIOUS</div><div onClick={()=>this.props.goToNextPod(this.props.index)}>NEXT ></div>
           </div>
           <div className="bottom-detail-body">
             <p className="episode-number">EPISODE 0{(Number(this.props.currentPodcast.i)+1)}</p>
@@ -39,11 +39,15 @@ class Details extends React.Component {
       }
       {
       this.props.currentView === "about" &&
-        <div className="">
-          <h1>Series Description:</h1>
-          <p>What happens when the best athletes in the world lose? From Gatorade and Gimlet Creative, a podcast about how the world’s most competitive athletes use defeat as motivation to build strength from the inside out, and ultimately come out on top. Episodes featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, JJ Watt, Karl Anthony Towns,and Kyle Schwarber, and the people who know them best. Listen here, or subscribe wherever you get your podcasts.</p>
-          <h1>Host Bio: </h1>
-          <p>Host Domonique Foxworth, a former cornerback in the National Football League, will bring his unique perspective as a professional athlete to each episode. Foxworth, who played seven seasons in the NFL, is the former president of the National Football League Players Association (NFLPA) and a journalist and commentator for ESPN.</p>
+        <div className="about-main">
+          <div className="about-text">
+            <h1>Series Description:</h1>
+            <p>What happens when the best athletes in the world lose? From Gatorade and Gimlet Creative, a podcast about how the world’s most competitive athletes use defeat as motivation to build strength from the inside out, and ultimately come out on top. Episodes featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, JJ Watt, Karl Anthony Towns,and Kyle Schwarber, and the people who know them best. Listen here, or subscribe wherever you get your podcasts.</p>
+          </div>
+          <div className="about-text">
+            <h1>Host Bio: </h1>
+            <p>Host Domonique Foxworth, a former cornerback in the National Football League, will bring his unique perspective as a professional athlete to each episode. Foxworth, who played seven seasons in the NFL, is the former president of the National Football League Players Association (NFLPA) and a journalist and commentator for ESPN.</p>
+          </div>
         </div>
       }
       </div>
@@ -55,8 +59,8 @@ export default Details;
 
 Details.propTypes = {
   currentPodcast: PropTypes.object.isRequired,
-  previousButton: PropTypes.func.isRequired,
-  nextButton: PropTypes.func.isRequired,
+  goToPreviousPod: PropTypes.func.isRequired,
+  goToNextPod: PropTypes.func.isRequired,
   currentView: PropTypes.string.isRequired,
   index: PropTypes.string.isRequired,
 };

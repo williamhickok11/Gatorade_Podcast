@@ -15,10 +15,11 @@ export default class App extends Component {
       currentPodcast: {},
       currenView: ""
     };
-    this.selectPodButton = this.selectPodButton.bind(this);
-    this.nextButton = this.nextButton.bind(this);
-    this.previousButton = this.previousButton.bind(this);
-    this.introViewButton = this.introViewButton.bind(this);
+    this.goToSelectedPod = this.goToSelectedPod.bind(this);
+    this.goToNextPod = this.goToNextPod.bind(this);
+    this.goToPreviousPod = this.goToPreviousPod.bind(this);
+    this.goToIntroView = this.goToIntroView.bind(this);
+    this.goToAboutView = this.goToAboutView.bind(this);
   }
 
   componentDidMount() {
@@ -26,7 +27,7 @@ export default class App extends Component {
     .then((result)=> {
       this.setState({
         podData: result.data.padcastData,
-        index:"0",
+        index:"",
         currentPodcast: result.data.padcastData[0],
         currenView: "intro"
       });
@@ -34,7 +35,7 @@ export default class App extends Component {
   }
 
   // define all functions (click events)
-  nextButton(i) {
+  goToNextPod(i) {
     if (i <= 4) {
       this.setState({
         index: parseInt(i)+1,
@@ -42,7 +43,7 @@ export default class App extends Component {
       });
     }
   }
-  previousButton(i) {
+  goToPreviousPod(i) {
     if (i > 0) {
       this.setState({
         index: parseInt(i)-1,
@@ -50,16 +51,23 @@ export default class App extends Component {
       });
     }
   }
-  selectPodButton(i) {
+  goToSelectedPod(i) {
     this.setState({
       currenView: "player",
       index: parseInt(i),
       currentPodcast: this.state.podData[parseInt(i)]
     });
   }
-  introViewButton() {
+  goToIntroView() {
     this.setState({
-      currenView: "intro"
+      currenView: "intro",
+      index: ""
+    });
+  }
+  goToAboutView() {
+    this.setState({
+      currenView: "about",
+      index: ""
     });
   }
 
@@ -71,15 +79,17 @@ export default class App extends Component {
         <hr className="banner-hr-mobile" style={{height:'5px', border:'none', color:'white', backgroundColor:'white', margin:'0 auto', width:'100%', position:'relative', top: '-58px'}} />
         <div className="main-body">
           <PodPicker
-            onClickProp = {this.selectPodButton}
-            introViewButton = {this.introViewButton}
+            index = {this.state.index}
+            onClickProp = {this.goToSelectedPod}
+            goToIntroView = {this.goToIntroView}
+            goToAboutView = {this.goToAboutView}
             podDataArray = {this.state.podData}
           />
           <Details
             currentView = {this.state.currenView}
             currentPodcast = {this.state.currentPodcast}
-            nextButton = {this.nextButton}
-            previousButton = {this.previousButton}
+            goToNextPod = {this.goToNextPod}
+            goToPreviousPod = {this.goToPreviousPod}
             index= {this.state.index}
           />
         </div>

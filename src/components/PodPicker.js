@@ -3,16 +3,20 @@ import PropTypes from 'prop-types';
 
 const PodCard = ({children}) => {
   return (
-    <div className="pod-picker-loop-div">
+    <div className="pp-loop-div">
       {children}
     </div>
   );
 };
 
-const PodCardText = ({title, clickProp, i}) => {
+const PodCardText = ({currentIndex, isActive, title, clickProp, i}) => {
+  let activeClass = "podcast-list-item";
+  if (isActive === false) {
+    activeClass += " pp-inactive";
+  }
   return (
-      <div className="podcast-list-item" onClick={()=>clickProp(i)}>
-        <p>{title}</p>
+      <div className={activeClass} onClick={()=>clickProp(i)}>
+        <p className={currentIndex == i ? "selected" : ""}>{title}</p>
       </div>
   );
 };
@@ -24,24 +28,25 @@ class PodPicker extends React.Component {
 
   render() {
     return (
-      <div className="pod-picker-main-outer">
-        <div className="pod-picker-main-inner">
-          <div className="pod-picker-left">
-            <div className="pod-picker-top">
+      <div className="pp-main-outer">
+        <div className="pp-main-inner">
+          <div className="pp-left">
+            <div className="pp-top">
               <h4>PG</h4>
             </div>
-            <div className="pod-picker-bottom">
-              <div className="pod-picker-inner-left">
+            <div className="pp-bottom">
+              <div className="pp-inner-left">
                 <h4>EP</h4>
               </div>
-              <div className="pod-picker-inner-right">
+              <div className="pp-inner-right">
                 {
                   this.props.podDataArray.map((d, i) => {
-
-                    // let active = d.
-                    console.log("d",d)
+                    let activeClass = "pp-loop-div";
+                    if (d.isActive === false) {
+                      activeClass += " pp-inactive";
+                    }
                     return (
-                      <div key={i} className="pod-picker-loop-div">
+                      <div key={i} className={activeClass}>
                         <p>0{i+1}</p>
                       </div>
                     );
@@ -50,21 +55,23 @@ class PodPicker extends React.Component {
               </div>
             </div>
           </div>
-          <div className="pod-picker-right">
-            <div className="pod-picker-top">
+          <div className="pp-right">
+            <div className="pp-top">
               <div>
-                <h3 onClick={this.props.introViewButton}>INTRO</h3>
+                <h3 onClick={this.props.goToIntroView}>INTRO</h3>
               </div>
               <div>
-                <h3>ABOUT</h3>
+                <h3 onClick={this.props.goToAboutView}>ABOUT</h3>
               </div>
             </div>
-            <div className="pod-picker-selector">
+            <div className="pp-selector">
               {
                 this.props.podDataArray.map((d, i) => {
                   return (
                     <PodCard key={i}>
                       <PodCardText
+                        currentIndex= {this.props.index}
+                        isActive = {d.isActive}
                         i={d.i}
                         title={d.title}
                         clickProp={this.props.onClickProp}
@@ -78,27 +85,31 @@ class PodPicker extends React.Component {
         </div>
 
         {/**** MOBILE VIEW ****/}
-        <div className="pod-picker-main-inner-mobile">
-          <div className="pod-picker-loop-div-mobile ppld-mobile">
-            <p onClick={this.props.introViewButton}>INTRO</p>
+        <div className="pp-main-inner-mobile">
+          <div className="pp-loop-div-mobile ppld-mobile">
+            {/*<input type="button" disabled="true" value="INTRO" onClick={this.props.goToIntroView} />*/}
+            <p onClick={this.props.goToIntroView}>INTRO</p>
             <div className="verticle-line" />
           </div>
-          <div className="pod-picker-loop-div-mobile ppld-mobile">
-            <p>ABOUT</p>
+          <div className="pp-loop-div-mobile ppld-mobile">
+            <p onClick={this.props.goToAboutView}>ABOUT</p>
             <div className="verticle-line" />
           </div>
           {
             this.props.podDataArray.map((d, i) => {
+              let activeClass = "pp-loop-div-mobile";
+              if (d.isActive === false) {
+                activeClass += " pp-inactive";
+              }
               return (
-                <div key={i} className="pod-picker-loop-div-mobile" onClick={()=>this.props.onClickProp(i)}>
-                  <p>0{i+1}</p>
+                <div key={i} className={activeClass} onClick={()=>this.props.onClickProp(i)}>
+                  <p className={this.props.index == i ? "selected" : ""}>0{i+1}</p>
                   <div className="verticle-line" />
                 </div>
               );
             })
           }
         </div>
-
       </div>
     );
   }
@@ -114,7 +125,8 @@ PodCardText.propTypes = {
 PodPicker.propTypes = {
   onClickProp: PropTypes.func.isRequired,
   podDataArray: PropTypes.array.isRequired,
-  introViewButton: PropTypes.func.isRequired,
+  goToIntroView: PropTypes.func.isRequired,
+  goToAboutView: PropTypes.func.isRequired,
 };
 
 export default PodPicker;

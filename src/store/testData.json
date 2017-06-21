@@ -8,7 +8,8 @@
       "subtitle": "with JJ Watt, of the Houston Texans",
       "summary": "This is a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
       "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "active": false
+      "isActive": true,
+      "isSelected": false
     },
     {
       "i": "1",
@@ -17,7 +18,8 @@
       "subtitle": "this will be a subtitle sentence",
       "summary": "This will be the last sentence to explain the significance of this section This is a summary. It will probably take up a few sentences. ",
       "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "active": false
+      "isActive": true,
+      "isSelected": false
     },
     {
       "i": "2",
@@ -26,34 +28,38 @@
       "subtitle": "this will be a subtitle sentence",
       "summary": "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
       "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "active": false
+      "isActive": true,
+      "isSelected": false
     },
     {
       "i": "3",
-      "iframeUrl": "https://player.megaphone.fm/GLT7199909723?",
+      "iframeUrl": "",
       "title": "JJ Watt",
-      "subtitle": "this will be a subtitle sentence",
-      "summary": "Note to self that I need to write more words in a summary. It will probably take up a few sentences. This will be the last sentence to explain the significance of this section",
-      "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "active": false
+      "subtitle": "Coming Soon",
+      "summary": "",
+      "showNotes": "",
+      "isActive": false,
+      "isSelected": false
     },
     {
       "i": "4",
-      "iframeUrl": "https://player.megaphone.fm/GLT7925598534?",
+      "iframeUrl": "",
       "title": "Serena Williams",
-      "subtitle": "this will be a subtitle sentence",
-      "summary": "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
-      "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "active": false
+      "subtitle": "Coming Soon",
+      "summary": "",
+      "showNotes": "",
+      "isActive": false,
+      "isSelected": false
     },
     {
       "i": "5",
-      "iframeUrl": "https://player.megaphone.fm/GLT1756743900?",
+      "iframeUrl": "",
       "title": "Matt Ryan",
-      "subtitle": "this will be a subtitle sentence",
-      "summary": "This is a summary. It will probably take up a few sentences. Note to self that I need to write more words in a summary. This will be the last sentence to explain the significance of this section",
-      "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "active": false
+      "subtitle": "Coming Soon",
+      "summary": "",
+      "showNotes": "",
+      "isActive": false,
+      "isSelected": false
     }
   ]
 }
