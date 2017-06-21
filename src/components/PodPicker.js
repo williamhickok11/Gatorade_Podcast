@@ -37,6 +37,9 @@ class PodPicker extends React.Component {
               <div className="pod-picker-inner-right">
                 {
                   this.props.podDataArray.map((d, i) => {
+
+                    // let active = d.
+                    console.log("d",d)
                     return (
                       <div key={i} className="pod-picker-loop-div">
                         <p>0{i+1}</p>
