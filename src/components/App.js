@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import PropTypes from 'prop-types';
 import Banner from './Banner';
 import PodPicker from './PodPicker';
@@ -65,10 +66,9 @@ export default class App extends Component {
   render() {
     return (
       <div className="main-container">
-        <img src="http://pepsico.demdex.net/event?d_sid=8045028" width="0" height="0" />
         <Banner />
         <hr className="banner-hr" style={{height:'8px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', margin:'0 auto', width:'90%'}} />
-        <hr className="banner-hr-mobile" style={{height:'5px', border:'none', color:'white', backgroundColor:'white', margin:'0 auto', width:'100%', position:'relative', top: '-55px'}} />
+        <hr className="banner-hr-mobile" style={{height:'5px', border:'none', color:'white', backgroundColor:'white', margin:'0 auto', width:'100%', position:'relative', top: '-58px'}} />
         <div className="main-body">
           <PodPicker
             onClickProp = {this.selectPodButton}

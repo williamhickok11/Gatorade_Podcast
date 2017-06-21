@@ -198,7 +198,12 @@ width: 225px;
 
 
 /* MEDIA QUERIES */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width: 480px) {
+  .main-body {
+    min-width: 800px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .intro-main {
     padding: 0 25px 25px 25px;
     position: relative;
@@ -254,9 +259,8 @@ width: 225px;
     display: none
   }
   .pod-picker-main-inner-mobile {
-    display: inline-block;
+    display: flex;
     overflow-x: scroll;
-    width: 725px;
   }
   .pod-picker-main-outer {
     height: 70px;
@@ -267,13 +271,10 @@ width: 225px;
   }
   .pod-picker-loop-div-mobile {
     display: inline-block;
+    width: 82px;
   }
   .pod-picker-loop-div-mobile p {
-    padding: 30px 30px 0 30px;
-  }
-  .ppld-mobile p {
-    /*padding: 30px 30px 0 30px;*/
-    padding: 0 20px;
+    padding: 23px 30px 0 30px;
   }
   .top-controls {
     display: none;
