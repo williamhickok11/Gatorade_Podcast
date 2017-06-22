@@ -10,12 +10,8 @@ const PodCard = ({children}) => {
 };
 
 const PodCardText = ({currentIndex, isActive, title, clickProp, i}) => {
-  let activeClass = "podcast-list-item";
-  if (isActive === false) {
-    activeClass += " pp-inactive";
-  }
   return (
-      <div className={activeClass} onClick={()=>clickProp(i)}>
+      <div className={isActive === false ? "podcast-list-item pp-inactive" : "podcast-list-item"} onClick={()=>clickProp(i)}>
         <p className={currentIndex == i ? "selected" : ""}>{title}</p>
       </div>
   );
@@ -58,10 +54,10 @@ class PodPicker extends React.Component {
           <div className="pp-right">
             <div className="pp-top">
               <div>
-                <h3 onClick={this.props.goToIntroView}>INTRO</h3>
+                <h3 className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>INTRO</h3>
               </div>
               <div>
-                <h3 onClick={this.props.goToAboutView}>ABOUT</h3>
+                <h3 className={this.props.currentView === "about" ? "selected" : "" } onClick={this.props.goToAboutView}>ABOUT</h3>
               </div>
             </div>
             <div className="pp-selector">
@@ -88,11 +84,11 @@ class PodPicker extends React.Component {
         <div className="pp-main-inner-mobile">
           <div className="pp-loop-div-mobile ppld-mobile">
             {/*<input type="button" disabled="true" value="INTRO" onClick={this.props.goToIntroView} />*/}
-            <p onClick={this.props.goToIntroView}>INTRO</p>
+            <p className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>INTRO</p>
             <div className="verticle-line" />
           </div>
           <div className="pp-loop-div-mobile ppld-mobile">
-            <p onClick={this.props.goToAboutView}>ABOUT</p>
+            <p className={this.props.currentView === "about" ? "selected" : "" } onClick={this.props.goToAboutView}>ABOUT</p>
             <div className="verticle-line" />
           </div>
           {
@@ -103,7 +99,7 @@ class PodPicker extends React.Component {
               }
               return (
                 <div key={i} className={activeClass} onClick={()=>this.props.onClickProp(i)}>
-                  <p className={this.props.index == i ? "selected" : ""}>0{i+1}</p>
+                  <p className={this.props.index === i ? "selected" : ""}>0{i+1}</p>
                   <div className="verticle-line" />
                 </div>
               );
@@ -123,10 +119,12 @@ PodCardText.propTypes = {
   clickProp: PropTypes.func.isRequired,
 };
 PodPicker.propTypes = {
+  index: PropTypes.string.isRequired,
   onClickProp: PropTypes.func.isRequired,
   podDataArray: PropTypes.array.isRequired,
   goToIntroView: PropTypes.func.isRequired,
   goToAboutView: PropTypes.func.isRequired,
+  currentView: PropTypes.string.isRequired,
 };
 
 export default PodPicker;

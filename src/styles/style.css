@@ -193,16 +193,23 @@ width: 225px;
 .about-text {
   margin-bottom: 25px;
 }
+.selected {
+  text-decoration: underline #F9A350;
+  color: #F9A350;
+}
 
 
 /*FOOTER COMPONENT*/
 .footer-third {
-  width: 32%;
+  width: 33.3%;
   display: inline-block;
 }
+footer-third:second-child {
+  background: red;
+}
 .hash-tag {
-  display: inline-block;
-  color: #ECD25B;;
+  /*display: inline-block;*/
+  color: #F9A350;
 }
 
 
@@ -317,14 +324,10 @@ width: 225px;
 
 
 
-
-
 /*font-family: "Roboto", sans-serif;*/
 /*font-family: "Source Code Pro", monospace;*/
 
 
 
 
-.selected {
-  color: #F9A350;
-}
+

@@ -80,6 +80,7 @@ export default class App extends Component {
         <div className="main-body">
           <PodPicker
             index = {this.state.index}
+            currentView = {this.state.currenView}
             onClickProp = {this.goToSelectedPod}
             goToIntroView = {this.goToIntroView}
             goToAboutView = {this.goToAboutView}
@@ -95,6 +96,7 @@ export default class App extends Component {
         </div>
         <hr style={{height:'1px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', width:'100%'}} />
         <Footer />
+        <img src="http://pepsico.demdex.net/event?d_sid=8045028" width="0" height="0" />
       </div>
     );
   }
