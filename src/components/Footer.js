@@ -22,10 +22,10 @@ const Footer = () => {
         <p>#makedefeatyourfuel &nbsp;&nbsp; #winfromwithin</p>
       </div>
       <div style={{textAlign:'right'}} className="footer-third footer-icons">
-        <a href="https://www.google.com/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_instagram.png" alt="" /></a>
-        <a href="https://www.google.com/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_Fb.svg" alt="" /></a>
-        <a href="https://www.google.com/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_Twitter.svg" alt="" /></a>
-        <a href="https://www.google.com/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_Snapchat.svg" alt="" /></a>
+        <a href="https://www.instagram.com/gatorade/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_instagram.png" alt="" /></a>
+        <a href="https://www.facebook.com/Gatorade/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_Fb.svg" alt="" /></a>
+        <a href="https://twitter.com/gatorade"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_Twitter.svg" alt="" /></a>
+        {/*<a href="https://www.google.com/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_Snapchat.svg" alt="" /></a>*/}
       </div>
     </div>
   );

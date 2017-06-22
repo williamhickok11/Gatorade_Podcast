@@ -12,7 +12,7 @@ const PodCard = ({children}) => {
 const PodCardText = ({currentIndex, isActive, title, clickProp, i}) => {
   return (
       <div className={isActive === false ? "podcast-list-item pp-inactive" : "podcast-list-item"}>
-        <input type="button" className={currentIndex == i ? "selected" : ""} onClick={()=>clickProp(i)} value={title} />
+        <p className={currentIndex == i ? "selected" : ""} onClick={()=>clickProp(i)}>{title}</p>
       </div>
   );
 };
