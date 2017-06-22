@@ -13,22 +13,22 @@
     },
     {
       "i": "1",
-      "iframeUrl": "https://player.megaphone.fm/GLT4745570283?",
+      "iframeUrl": "",
       "title": "Peyton & Eli Manning",
-      "subtitle": "this will be a subtitle sentence",
-      "summary": "This will be the last sentence to explain the significance of this section This is a summary. It will probably take up a few sentences. ",
-      "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "isActive": true,
+      "subtitle": "Coming Soon",
+      "summary": "",
+      "showNotes": "",
+      "isActive": false,
       "isSelected": false
     },
     {
       "i": "2",
-      "iframeUrl": "https://player.megaphone.fm/GLT7925598534?",
+      "iframeUrl": "",
       "title": "Karl Anthony Towns",
-      "subtitle": "this will be a subtitle sentence",
-      "summary": "It will probably take up a few sentences. This is a summary. This will be the last sentence to explain the significance of this section",
-      "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
-      "isActive": true,
+      "subtitle": "Coming Soon",
+      "summary": "",
+      "showNotes": "",
+      "isActive": false,
       "isSelected": false
     },
     {

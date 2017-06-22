@@ -11,7 +11,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="gatorade-logo">
-          <img src="./imgs/Logo_Gatorade.svg" alt="Smiley face"  />
+          <a href="http://www.gatorade.com/"><img src="./imgs/Logo_Gatorade.svg" alt="Smiley face"  /></a>
         </div>
       </div>
     </div>
