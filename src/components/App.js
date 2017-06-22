@@ -94,7 +94,7 @@ export default class App extends Component {
             index= {this.state.index}
           />
         </div>
-        <hr style={{height:'1px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', width:'100%'}} />
+
         <Footer />
         <img src="http://pepsico.demdex.net/event?d_sid=8045028" width="0" height="0" />
       </div>

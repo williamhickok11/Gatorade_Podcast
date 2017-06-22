@@ -11,11 +11,15 @@ const Footer = () => {
 
   return (
     <div className="footer-main" style={styles}>
-      <div className="footer-third">
+      <div className="footer-third hash-tag-mobile">
+        <p>#makedefeatyourfuel</p><p>#winfromwithin</p>
+      </div>
+      <hr style={{height:'1px', border:'none', margin:'5px 0 20px 0', color:'#AFA193', backgroundColor:'#AFA193', width:'100%'}} />
+      <div className="footer-third gim-im">
         <img style={{width:'75px'}} src="./imgs/GC_flag.png" alt="" />
       </div>
-      <div style={{textAlign:'center', fontSize:'12px'}} className="footer-third">
-        <p className="hash-tag">#FuledByDefeat &nbsp;&nbsp; #SecretToVictoryPodcast</p>
+      <div className="footer-third hash-tag">
+        <p>#makedefeatyourfuel &nbsp;&nbsp; #winfromwithin</p>
       </div>
       <div style={{textAlign:'right'}} className="footer-third footer-icons">
         <a href="https://www.google.com/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="./imgs/Icon_instagram.png" alt="" /></a>

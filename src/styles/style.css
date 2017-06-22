@@ -1,13 +1,21 @@
-/* MAIN */
+/********************  MAIN  ********************/
 @font-face {
     font-family: GatoradeBlack;
     src: url("../imgs/Gatorade Black.otf") format("opentype");
 }
-
 @font-face {
-    font-family: GatoradeBlack;
+    font-family: GatoradeBlackBold;
     font-weight: bold;
     src: url("../imgs/Gatorade Black.otf") format("opentype");
+}
+@font-face {
+    font-family: ProximaNova-Light-webfont;
+    src: url("../imgs/Proxima Nova-Webfont/Webfonts/proximanova_light_macroman/ProximaNova-Light-webfont.ttf") format("opentype");
+}
+@font-face {
+    font-family: ProximaNova-Light-webfont;
+    src: url("../imgs/Proxima Nova-Webfont/Webfonts/proximanova_light_macroman/ProximaNova-Light-webfont.ttf") format("opentype");
+    font-weight: bold;
 }
 html {
   background-color: #191918;
@@ -21,13 +29,16 @@ body {
   max-width:1000px;
   margin:0 auto;
 }
+h1, h2, h3, h4, h6 {
+  font-family: ProximaNova-Light-webfont;
+  margin:0 0 10px 0;
+}
 h1 {
+  text-transform: uppercase;
   color: #F9A350;
   font-family: "GatoradeBlack", monospace;
   text-transform: capitalize;
-}
-h1, h2, h3, h4, h6 {
-  margin:0 0 10px 0;
+  /*letter-spacing: 1.5px;*/
 }
 p {
   font-weight: 100;
@@ -37,9 +48,8 @@ p {
 }
 
 
-/* BANNER */
+/********************  BANNER  ********************/
 .banner-main {
-  /*background: linear-gradient( 0deg, #3C3A2C, #353124 );*/
   background-image:  url('../imgs/Header_Desktop.png');
   background-size: 1000px 177px;
   font-family: sans-serif;
@@ -77,7 +87,7 @@ width: 225px;
 
 
 
-/* DETAIL COMPONENT */
+/********************  DETAIL COMPONENT  ********************/
 .detail-view {
   font-family: sans-serif;
   width: 60%;
@@ -103,9 +113,12 @@ width: 225px;
   margin-top: 25px;
   width: 90%;
 }
-.bottom-detail-body h1 {
+.detail-view h1 {
   margin-top: 20px;
   margin-bottom: 0;
+}
+.intro-main h1 {
+  margin-bottom: 20px;
 }
 .episode-number {
   letter-spacing: 4px;
@@ -113,12 +126,13 @@ width: 225px;
 }
 .detail-view p {
   margin-right: 50px;
-  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+  font-family: "ProximaNova-Light-webfont", monospace;
   color: #DADAD8;
 }
 .detail-view h2 {
-  font-family: "Source Code Pro", monospace;
-  font-size: 18px;
+  font-family: "ProximaNova-Light-webfont", monospace;
+  font-size: 20px;
 }
 .detail-text {
   padding: 15px 0;
@@ -130,7 +144,7 @@ width: 225px;
 }
 
 
-/* POD PICKER COMPONENT */
+/********************  POD PICKER COMPONENT  ********************/
 .pp-main-outer {
   display: inline-block;
   font-family: "Source Code Pro", monospace;
@@ -191,7 +205,7 @@ width: 225px;
   margin-top: 30px;
 }
 .about-text {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .selected {
   text-decoration: underline #F9A350;
@@ -199,21 +213,30 @@ width: 225px;
 }
 
 
-/*FOOTER COMPONENT*/
+/********************  FOOTER COMPONENT  ********************/
 .footer-third {
   width: 33.3%;
   display: inline-block;
+}
+.footer-third p{
+  font-family: ProximaNova-Light-webfont;
+  font-size: 14px;
 }
 footer-third:second-child {
   background: red;
 }
 .hash-tag {
-  /*display: inline-block;*/
-  color: #F9A350;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+}
+.hash-tag-mobile {
+  display: none;
+  font-size: 12px;
 }
 
 
-/* MEDIA QUERIES */
+/********************  MEDIA QUERIES  ********************/
 @media only screen and (min-width: 480px) {
   .main-body {
     min-width: 800px;
@@ -221,7 +244,7 @@ footer-third:second-child {
 }
 @media only screen and (max-width: 480px) {
   .intro-main, .about-main {
-    padding: 0 25px 25px 25px;
+    padding: 0 25px 0 25px;
     position: relative;
     top: -60px;
   }
@@ -268,7 +291,7 @@ footer-third:second-child {
     display: none;
   }
   .intro-image-div img {
-    margin: 20px 10px 0 0;
+    margin: 10px 10px 0 0;
     height: 60px;
   }
   .pp-main-inner {
@@ -292,11 +315,6 @@ footer-third:second-child {
   .pp-loop-div-mobile p {
     padding: 23px 30px 0 30px;
   }
-  /*.about-main {
-    background: red;
-    padding: 25px 0;
-    margin: 0;
-  }*/
   .top-controls {
     display: none;
   }
@@ -310,6 +328,19 @@ footer-third:second-child {
     top: -75px;
     padding: 0 20px;
   }
+  /*FOOTER*/
+  .hash-tag-mobile {
+    display: inline-block;
+  }
+  .hash-tag {
+    display: none;
+  }
+  .footer-third {
+    width: 100%;
+  }
+  .gim-im {
+    width: 0;
+  }
 }
 
 @media only screen and (min-device-width : 480px) {
@@ -320,14 +351,4 @@ footer-third:second-child {
     display: block;
   }
 }
-
-
-
-
-/*font-family: "Roboto", sans-serif;*/
-/*font-family: "Source Code Pro", monospace;*/
-
-
-
-
 
