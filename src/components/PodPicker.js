@@ -43,7 +43,7 @@ class PodPicker extends React.Component {
                     }
                     return (
                       <div key={i} className={activeClass}>
-                        <p>0{i+1}</p>
+                        <p>0{i}</p>
                       </div>
                     );
                   })
@@ -99,7 +99,7 @@ class PodPicker extends React.Component {
               }
               return (
                 <div key={i} className={activeClass} onClick={()=>this.props.onClickProp(i)}>
-                  <p className={this.props.index === i ? "selected" : ""}>0{i+1}</p>
+                  <p className={this.props.index === i ? "selected" : ""}>0{i}</p>
                   <div className="verticle-line" />
                 </div>
               );

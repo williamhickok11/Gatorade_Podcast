@@ -15,12 +15,12 @@ class Details extends React.Component {
             <div onClick={()=>this.props.goToPreviousPod(this.props.index)}>^&nbsp; PREVIOUS</div><div onClick={()=>this.props.goToNextPod(this.props.index)}>NEXT&nbsp; ></div>
           </div>
           <div className="bottom-detail-body">
-            <p className="episode-number">EPISODE 0{(Number(this.props.currentPodcast.i)+1)}</p>
+            <p className="episode-number">EPISODE 0{(Number(this.props.currentPodcast.i))}</p>
             <h1>{this.props.currentPodcast.title}</h1>
             <h2>{this.props.currentPodcast.subtitle}</h2>
             <p className="detail-text">{this.props.currentPodcast.summary}</p>
             <div style={{width:'100%', margin:'20px auto'}}>
-              <iframe frameBorder="no" height="150" scrolling="no" src={this.props.currentPodcast.iframeUrl} width="100%" />
+              <div className="iframe"><iframe frameBorder="no" height="150" scrolling="no" src={this.props.currentPodcast.iframeUrl} width="100%" /></div>
             </div>
           </div>
         </div>
