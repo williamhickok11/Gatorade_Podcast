@@ -20,7 +20,7 @@ class Details extends React.Component {
             <h2>{this.props.currentPodcast.subtitle}</h2>
             <p className="detail-text">{this.props.currentPodcast.summary}</p>
             <div style={{width:'100%', margin:'20px auto'}}>
-              <div className="iframe"><iframe frameBorder="no" height="150" scrolling="no" src={this.props.currentPodcast.iframeUrl} width="100%" /></div>
+              <div className="iframe loader"><iframe frameBorder="no" height="150" scrolling="no" src={this.props.currentPodcast.iframeUrl} width="100%" /></div>
             </div>
           </div>
         </div>
