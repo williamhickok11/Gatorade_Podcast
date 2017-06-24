@@ -69,7 +69,7 @@ p {
   display: block
 }
 .main-title-mobile {
-  display: none;
+  /*display: none;*/
 }
 .main-title {
 width: 225px;

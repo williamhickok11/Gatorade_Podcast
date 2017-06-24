@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="innerBannerWrapper">
         <div className="page-title">
           <div className="banner-title">
-            <img className="main-title" src="../imgs/Gatorade-Main-Title.png" alt="Smiley face" />
+            {/*<img className="main-title" src="../imgs/Gatorade-Main-Title.png" alt="Smiley face" />*/}
             <img className="main-title-mobile" src="../imgs/Title-Mobile.png" alt="Smiley face" />
           </div>
         </div>

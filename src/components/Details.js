@@ -32,9 +32,9 @@ class Details extends React.Component {
           <p>The Secret to Victory is a branded podcast from Gatorade and Gimlet Creative about what happens when the best athletes in the world lose. We'll feature Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, JJ Watt, Karl Anthony Towns,and Kyle Schwarber, and the people who know them best.</p>
           <p>If you're new to podcasts, there are a bunch of places you can listen to The Secret to Victory. Stream it right here, or try out one of the links below:</p>
           <div className="intro-image-div">
-            <a href="https://www.google.com"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
+            <a href="https://itunes.apple.com/us/podcast/id1252154385"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
             <a href="https://www.google.com"><img src="../imgs/Spotify.png" alt="" /></a>
-            <a href="https://www.google.com"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
+            <a href="https://play.google.com/music/listen#/ps/Iocylyx7uf5s6xaizk6ol2t276m"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
           </div>
           <div className="rss-feed">
             <h2>RSS for your podcatcher</h2>
