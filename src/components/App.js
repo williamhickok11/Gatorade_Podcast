@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Promise from 'promise-polyfill';
 import PropTypes from 'prop-types';
 import Banner from './Banner';
 import PodPicker from './PodPicker';
@@ -23,6 +24,10 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    if (!window.Promise) {
+      window.Promise = Promise;
+    }
+
     axios.get(this.props.apiCall)
     .then((result)=> {
       this.setState({

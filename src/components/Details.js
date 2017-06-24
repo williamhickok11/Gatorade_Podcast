@@ -38,7 +38,7 @@ class Details extends React.Component {
           </div>
           <div className="rss-feed">
             <h2>RSS for your podcatcher</h2>
-            <p>http://feeds.gimletcreative.com/theventureshow</p>
+            <p>http://feeds.gimletcreative.com/thesecrettovictory</p>
           </div>
         </div>
       }
