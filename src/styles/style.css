@@ -69,10 +69,10 @@ p {
   display: block
 }
 .main-title-mobile {
-  /*display: none;*/
+  display: none;
 }
 .main-title {
-width: 225px;
+  width: 250px;
   display: block;
 }
 .page-title {
@@ -285,7 +285,7 @@ width: 225px;
   }
   .main-title-mobile {
     display: block;
-    width: 265px;
+    width: 100%;
   }
   .main-title {
     display: none;
