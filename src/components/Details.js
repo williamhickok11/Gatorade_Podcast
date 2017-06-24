@@ -53,7 +53,7 @@ class Details extends React.Component {
             <h1>Host Bio: </h1>
             <p>Host Domonique Foxworth, a former cornerback in the National Football League, will bring his unique perspective as a professional athlete to each episode. Foxworth, who played seven seasons in the NFL, is the former president of the National Football League Players Association (NFLPA) and a journalist and commentator for ESPN.</p>
           </div>
-          <div style={{width:'100%', margin:'20px auto'}}>
+          <div className="about-iframe">
             <iframe frameBorder="no" height="200" scrolling="no" src="https://player.megaphone.fm/GLT3091702141?light=true&auto=true" width="100%" />
           </div>
         </div>

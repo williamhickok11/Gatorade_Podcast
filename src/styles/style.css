@@ -219,6 +219,9 @@ width: 225px;
 .about-text {
   margin-bottom: 20px;
 }
+.about-iframe {
+  margin: 25px 50px 50px 0;
+}
 .selected {
   text-decoration: underline #F9A350;
   color: #F9A350;
