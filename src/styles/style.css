@@ -229,6 +229,11 @@ p {
 
 
 /********************  FOOTER COMPONENT  ********************/
+.footer-main {
+  display: block;
+  margin: 15px;
+  padding-bottom: 15px;
+}
 .footer-third {
   width: 33.3%;
   display: inline-block;
@@ -259,6 +264,20 @@ p {
   }
 }
 @media only screen and (max-width: 480px) {
+  body {
+    background-image: linear-gradient( 0deg, #191918, #565340 );
+  }
+  .main-body {
+    position: relative;
+    top: 90px;
+  }
+  .banner-main {
+    height: 320px;
+    background-image:  url('../imgs/Mobile-Banner.jpeg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  }
   .intro-main, .about-main {
     padding: 0 25px 0 25px;
     position: relative;
@@ -268,10 +287,19 @@ p {
     margin: 0;
   }
   .banner-title {
-    margin: 50px 0 0 0;
+    /*margin: 50px 0 0 0;*/
+    display: none;
   }
   .banner-hr-mobile {
     display: block;
+    height: 5px;
+    border: none;
+    color: white;
+    background-color: white;
+    margin: 0px auto;
+    width: 100%;
+    position: relative;
+    top: 32px;
   }
   .banner-hr {
     display: none;
@@ -291,9 +319,10 @@ p {
     display: none;
   }
   .gatorade-logo img {
-    position: relative;
+    /*position: relative;
     top: -175px;
-    left: 10px;
+    left: 10px;*/
+    display: none
   }
   .intro-header {
     width: 100%;
@@ -348,6 +377,11 @@ p {
     padding: 0 20px;
   }
   /*FOOTER*/
+  .footer-main {
+    display: block;
+    margin: 15px;
+    padding-bottom: 15px;
+  }
   .hash-tag-mobile {
     display: inline-block;
   }
@@ -387,7 +421,7 @@ p {
 
 
 
-
+/*#565340*/
 
 
 

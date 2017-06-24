@@ -3,14 +3,8 @@ import React from 'react';
 const Footer = () => {
   // console.log("props",props);
 
-  const styles = {
-    display: 'block',
-    margin: '15px',
-    paddingBottom: '15px'
-  };
-
   return (
-    <div className="footer-main" style={styles}>
+    <div className="footer-main">
       <div className="footer-third hash-tag-mobile">
         <p>#makedefeatyourfuel</p><p>#winfromwithin</p>
       </div>

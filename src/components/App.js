@@ -81,7 +81,7 @@ export default class App extends Component {
       <div className="main-container">
         <Banner />
         <hr className="banner-hr" style={{height:'8px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', margin:'0 auto', width:'90%'}} />
-        <hr className="banner-hr-mobile" style={{height:'5px', border:'none', color:'white', backgroundColor:'white', margin:'0 auto', width:'100%', position:'relative', top: '-58px'}} />
+        <hr className="banner-hr-mobile" />
         <div className="main-body">
           <PodPicker
             index = {this.state.index}
