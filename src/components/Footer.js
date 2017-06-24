@@ -19,7 +19,7 @@ const Footer = () => {
         <a target="_blank" href="http://creative.gimletmedia.com/"><img style={{width:'75px'}} src="../imgs/GC_flag.png" alt="" /></a>
       </div>
       <div className="footer-third hash-tag">
-        <p>#makedefeatyourfuel &nbsp;&nbsp; #winfromwithin</p>
+        <p>#makedefeatyourfuel</p><p>#winfromwithin</p>
       </div>
       <div style={{textAlign:'right'}} className="footer-third footer-icons">
         <a target="_blank" href="https://www.instagram.com/gatorade/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="../imgs/Icon_instagram.png" alt="" /></a>

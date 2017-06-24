@@ -230,6 +230,10 @@ footer-third:second-child {
   text-align: center;
   font-size: 12px;
 }
+.hash-tag p {
+  display: inline;
+  margin-right: 10px;
+}
 .hash-tag-mobile {
   display: none;
   font-size: 12px;
