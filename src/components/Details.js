@@ -33,7 +33,7 @@ class Details extends React.Component {
           <p>If you’re new to podcasts, there are a bunch of places you can listen to <i>The Secret to Victory</i>. Stream it right here, or try out one of the links below:</p>
           <div className="intro-image-div">
             <a href="https://itunes.apple.com/us/podcast/id1252154385"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
-            <a href="https://www.google.com"><img src="../imgs/Spotify.png" alt="" /></a>
+            <a href="https://www.spotify.com/us/"><img src="../imgs/Spotify.png" alt="" /></a>
             <a href="https://play.google.com/music/listen#/ps/Iocylyx7uf5s6xaizk6ol2t276m"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
           </div>
           <div className="rss-feed">
