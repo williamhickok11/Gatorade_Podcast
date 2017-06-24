@@ -142,6 +142,18 @@ width: 225px;
   height: 50px;
   margin: 25px 40px 0 0 ;
 }
+.rss-feed {
+  margin: 35px 25px;
+  text-align: center;
+}
+.rss-feed p {
+  overflow-x: scroll;
+  margin-top: 0 auto;
+  border: 1px solid gray;
+  padding: 10px;
+  background-color: white;
+  color: #7E7E81;
+}
 
 
 /********************  POD PICKER COMPONENT  ********************/
@@ -221,9 +233,6 @@ width: 225px;
 .footer-third p{
   font-family: ProximaNova-Light-webfont;
   font-size: 14px;
-}
-footer-third:second-child {
-  background: red;
 }
 .hash-tag {
   display: inline-block;

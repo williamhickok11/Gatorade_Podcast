@@ -36,6 +36,10 @@ class Details extends React.Component {
             <a href="https://www.google.com"><img src="../imgs/Spotify.png" alt="" /></a>
             <a href="https://www.google.com"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
           </div>
+          <div className="rss-feed">
+            <h2>RSS for your podcatcher</h2>
+            <p>http://feeds.gimletcreative.com/theventureshow</p>
+          </div>
         </div>
       }
       {
