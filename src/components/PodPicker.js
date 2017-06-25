@@ -37,6 +37,7 @@ class PodPicker extends React.Component {
               <div className="pp-inner-right">
                 {
                   this.props.podDataArray.map((d, i) => {
+                    console.log("d",d);
                     let activeClass = "pp-loop-div";
                     if (d.isActive === false) {
                       activeClass += " pp-inactive";

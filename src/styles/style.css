@@ -56,6 +56,9 @@ p {
   height: 177px;
   display: block;
 }
+..g-logo-gost {
+  display: none;
+}
 .innerBannerWrapper {
   padding: 20px;
 }
@@ -283,6 +286,15 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+  .g-logo-gost {
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    right: 30px;
+    width: 10px;
+    height: 10px;
   }
   .border-box-shadow {
     display: inline-block;

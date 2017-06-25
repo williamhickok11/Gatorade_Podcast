@@ -81,6 +81,7 @@ export default class App extends Component {
       <div className="main-container">
         <Banner />
         <div className="border-box-shadow" />
+        <div className="g-logo-gost" />
         <hr className="banner-hr" style={{height:'8px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', margin:'0 auto', width:'90%'}} />
         <hr className="banner-hr-mobile" />
         <div className="main-body">
@@ -100,7 +101,6 @@ export default class App extends Component {
             index= {this.state.index}
           />
         </div>
-
         <Footer />
         <img src="http://pepsico.demdex.net/event?d_sid=8045028" width="0" height="0" />
       </div>
