@@ -80,6 +80,7 @@ export default class App extends Component {
     return (
       <div className="main-container">
         <Banner />
+        <div className="border-box-shadow" />
         <hr className="banner-hr" style={{height:'8px', border:'none', color:'#AFA193', backgroundColor:'#AFA193', margin:'0 auto', width:'90%'}} />
         <hr className="banner-hr-mobile" />
         <div className="main-body">

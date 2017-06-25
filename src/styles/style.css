@@ -62,6 +62,9 @@ p {
 .banner-title {
   margin: 10px 0 0 20px;
 }
+.border-box-shadow {
+  display: none;
+}
 .banner-hr-mobile {
   display: none;
 }
@@ -95,7 +98,7 @@ p {
   float: left;
 }
 .intro-header {
-  width: 65%;
+  width: 70%;
   padding-top: 25px;
 }
 .top-controls div {
@@ -231,6 +234,8 @@ p {
 /********************  FOOTER COMPONENT  ********************/
 .footer-main {
   display: block;
+  position: relative;
+  top: 60px;
   margin: 15px;
   padding-bottom: 15px;
 }
@@ -272,11 +277,19 @@ p {
     top: 90px;
   }
   .banner-main {
-    height: 320px;
-    background-image:  url('../imgs/Mobile-Banner.jpeg');
-    background-size:     cover;
-    background-repeat:   no-repeat;
+    width:100vw;
+    height:100vw;
+    background-image: url('../imgs/Mobile-Banner.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
+  }
+  .border-box-shadow {
+    display: inline-block;
+    background-color: #484536;
+    width: 100vw;
+    box-shadow: 0px 10px 20px 35px #484536;
+    height: 5px;
   }
   .intro-main, .about-main {
     padding: 0 25px 0 25px;
@@ -409,6 +422,15 @@ p {
 }
 
 
+/*this is it!*/
+    /*box-shadow: inset 3px 3px 20px 20px #454335;*/
+/*this is it!*/
+
+
+
+
+
+
 /*
 .loader {
   background-image:  url('../imgs/loading.png');
@@ -416,19 +438,6 @@ p {
   background-attachment: fixed;
   background-position: center;
 }*/
-
-
-
-
-
-/*#565340*/
-
-
-
-
-
-
-
 
 
 
