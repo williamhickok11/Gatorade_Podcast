@@ -54,10 +54,10 @@ class PodPicker extends React.Component {
           <div className="pp-right">
             <div className="pp-top">
               <div>
-                <h3 className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>SUBSCRIBE</h3>
+                <p className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>SUBSCRIBE</p>
               </div>
               <div>
-                <h3 className={this.props.currentView === "about" ? "selected" : "" } onClick={this.props.goToAboutView}>ABOUT</h3>
+                <p className={this.props.currentView === "about" ? "selected" : "" } onClick={this.props.goToAboutView}>ABOUT</p>
               </div>
             </div>
             <div className="pp-selector">

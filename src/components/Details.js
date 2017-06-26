@@ -33,11 +33,11 @@ class Details extends React.Component {
       this.props.currentView === "intro" &&
         <div className="intro-main">
           <h1 className="intro-header">EVEN THE BEST ATHLETES IN THE WORLD LOSE. THIS IS A PODCAST ABOUT HOW THEY FACE IT.</h1>
-          <p>From Gatorade and Gimlet Creative, <i>The Secret to Victory</i> is about how the most competitive athletes in the world use defeat to fuel them. Featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, JJ Watt, Karl Anthony Towns, and Kyle Schwarber, and the people who know them best. Hosted by ESPN writer and former NFL player Domonique Foxworth.</p>
+          <p>From Gatorade and Gimlet Creative, <i>The Secret to Victory</i> is about how the most competitive athletes in the world use defeat to fuel them. Featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, J.J. Watt, Karl-Anthony Towns Jr., Kyle Schwarber, and the people who know them best. Hosted by ESPN writer and former NFL player Domonique Foxworth.</p>
           <br />
           <p>If you're new to podcasts, there are many places where you can listen to <i>The Secret to Victory</i>. Stream it online right here, or try out one of the links below:</p>
           <div className="about-iframe">
-            <iframe frameBorder="no" height="200" scrolling="no" src="https://player.megaphone.fm/GLT3091702141?light=true&auto=true" width="100%" />
+            <iframe frameBorder="no" height="200" scrolling="no" src="https://player.megaphone.fm/GLT3091702141?" width="100%" />
           </div>
           <div className="intro-image-div">
             <a target="_blank" href="https://itunes.apple.com/us/podcast/id1252154385"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
@@ -55,7 +55,7 @@ class Details extends React.Component {
         <div className="about-main">
           <div className="about-text">
             <h1>ABOUT THE SERIES:</h1>
-            <p>What happens when the best athletes in the world lose? From Gatorade and Gimlet Creative, a podcast about how the world’s most competitive athletes use defeat as motivation to build strength from the inside out, and ultimately come out on top. Episodes featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, JJ Watt, Karl Anthony Towns,and Kyle Schwarber, and the people who know them best. Listen here, or subscribe wherever you get your podcasts.</p>
+            <p>What happens when the best athletes in the world lose? From Gatorade and Gimlet Creative, a podcast about how the world's most competitive athletes use defeat as motivation to build strength from the inside out, and ultimately come out on top. Featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, J.J. Watt, Karl-Anthony Towns Jr., Kyle Schwarber, and the people who know them best. Listen here, or subscribe wherever you get your podcasts.</p>
           </div>
           <div className="about-text">
             <h1>ABOUT THE HOST:</h1>

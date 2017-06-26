@@ -3,10 +3,10 @@
   [
     {
       "i": "0",
-      "iframeUrl": "https://player.megaphone.fm/GLT3091702141?light=true&auto=true",
+      "iframeUrl": "https://player.megaphone.fm/GLT3091702141?",
       "title": "THE SECRET TO VICTORY",
       "subtitle": "with JJ Watt, of the Houston Texans",
-      "summary": "What happens when the best athletes in the world lose? From Gatorade and Gimlet Creative, a podcast about how the world’s most competitive athletes use defeat as motivation to build strength from the inside out, and ultimately come out on top. Episodes featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, JJ Watt, Karl Anthony Towns,and Kyle Schwarber, and the people who know them best. Listen here, or subscribe wherever you get your podcasts.",
+      "summary": "What happens when the best athletes in the world lose? From Gatorade and Gimlet Creative, a podcast about how the world’s most competitive athletes use defeat as motivation to build strength from the inside out, and ultimately come out on top. Episodes featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, J.J. Watt, Karl-Anthony Towns Jr., Kyle Schwarber, and the people who know them best. Listen here, or subscribe wherever you get your podcasts.",
       "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
       "isActive": true,
       "isSelected": false
@@ -24,7 +24,7 @@
     {
       "i": "2",
       "iframeUrl": "",
-      "title": "KARL ANTHONY TOWNS",
+      "title": "KARL-ANTHONY TOWNS JR.",
       "subtitle": "Episode coming soon.",
       "summary": "",
       "showNotes": "",
@@ -44,7 +44,7 @@
     {
       "i": "4",
       "iframeUrl": "",
-      "title": "JJ WATT",
+      "title": "J.J. WATT",
       "subtitle": "Episode coming soon.",
       "summary": "",
       "showNotes": "",
