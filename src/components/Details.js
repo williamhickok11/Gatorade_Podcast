@@ -41,7 +41,7 @@ class Details extends React.Component {
           </div>
           <div className="intro-image-div">
             <a target="_blank" href="https://itunes.apple.com/us/podcast/id1252154385"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
-            <a target="_blank" href="https://www.spotify.com/us/"><img src="../imgs/Spotify.png" alt="" /></a>
+            <a target="_blank" href="https://open.spotify.com/show/1H6EbmX0tV6BkGkfeJ98KG"><img src="../imgs/Spotify.png" alt="" /></a>
             <a target="_blank" href="https://play.google.com/music/listen#/ps/Iocylyx7uf5s6xaizk6ol2t276m"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
           </div>
           <div className="rss-feed">

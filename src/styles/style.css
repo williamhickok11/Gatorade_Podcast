@@ -307,16 +307,13 @@ p {
     width: 20%;
     height: 30px;
   }
-  .g-logo-gost {
+  .gimlet-logo-gost {
     display: inline-block;
     position: relative;
     top: -72px;
     float: left;
     width: 30%;
     height: 30px;
-  }
-  .gost-logos {
-
   }
   .border-box-shadow {
     display: inline-block;
