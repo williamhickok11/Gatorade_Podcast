@@ -149,7 +149,7 @@ p {
   margin: 25px 40px 0 0 ;
 }
 .rss-feed {
-  margin: 35px 100px 35px 25px;
+  margin: 35px 100px 70px 25px;
   text-align: center;
 }
 .rss-feed p {
@@ -226,7 +226,7 @@ p {
   margin-bottom: 20px;
 }
 .about-iframe {
-  margin: 25px 50px 50px 0;
+  margin: 25px 50px 25px 0;
 }
 .selected {
   text-decoration: underline #F9A350;
@@ -237,8 +237,6 @@ p {
 /********************  FOOTER COMPONENT  ********************/
 .footer-main {
   display: block;
-  position: relative;
-  top: 60px;
   margin: 15px;
   padding-bottom: 15px;
 }
@@ -248,7 +246,12 @@ p {
 }
 .footer-third p{
   font-family: ProximaNova-Light-webfont;
-  font-size: 14px;
+  font-size: 12px;
+}
+.hash-tag-mobile {
+  width: 100%;
+  font-family: ProximaNova-Light-webfont;
+  font-size: 12px;
 }
 .hash-tag {
   display: inline-block;
@@ -277,7 +280,7 @@ p {
   }
   .main-body {
     position: relative;
-    top: 90px;
+    top: 50px;
   }
   .banner-main {
     width:100vw;
@@ -288,13 +291,12 @@ p {
     background-position: center center;
   }
   .g-logo-gost {
-    background-color: red;
     display: inline-block;
     position: relative;
-    top: -30px;
-    right: 30px;
-    width: 10px;
-    height: 10px;
+    top: -72px;
+    float: right;
+    width: 20%;
+    height: 30px;
   }
   .border-box-shadow {
     display: inline-block;
@@ -309,7 +311,7 @@ p {
     top: -60px;
   }
   .about-iframe {
-    margin: 0;
+    margin: 20px 0;
   }
   .banner-title {
     /*margin: 50px 0 0 0;*/
@@ -324,7 +326,7 @@ p {
     margin: 0px auto;
     width: 100%;
     position: relative;
-    top: 32px;
+    top: -8px;
   }
   .banner-hr {
     display: none;
@@ -358,7 +360,7 @@ p {
     margin: 0;
   }
   .detail-view p {
-    margin: 10px 0 20px 0;
+    margin: 0;
   }
   .pp-right {
     display: none;
@@ -402,13 +404,15 @@ p {
     padding: 0 20px;
   }
   /*FOOTER*/
-  .footer-main {
-    display: block;
-    margin: 15px;
-    padding-bottom: 15px;
-  }
   .hash-tag-mobile {
-    display: inline-block;
+    display: inline;
+  }
+  .hash-tag-mobile div {
+    margin: 0 auto;
+  }
+  .hash-tag-mobile p {
+    display: inline;
+    margin: 4px;
   }
   .hash-tag {
     display: none;
@@ -421,6 +425,12 @@ p {
   }
   .rss-feed {
     margin: 25px 0 0 0;
+  }
+  .footer-main {
+    text-align: center;
+    position: relative;
+    top: 160px;
+    z-index: -1;
   }
 }
 

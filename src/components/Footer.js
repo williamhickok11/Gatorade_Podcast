@@ -5,8 +5,10 @@ const Footer = () => {
 
   return (
     <div className="footer-main">
-      <div className="footer-third hash-tag-mobile">
-        <p>#makedefeatyourfuel</p><p>#winfromwithin</p>
+      <div className="hash-tag-mobile">
+        <div>
+          <p>#makedefeatyourfuel</p><p>#winfromwithin</p>
+        </div>
       </div>
       <hr style={{height:'1px', border:'none', margin:'5px 0 20px 0', color:'#AFA193', backgroundColor:'#AFA193', width:'100%'}} />
       <div className="footer-third gim-im">

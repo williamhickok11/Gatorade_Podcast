@@ -37,7 +37,6 @@ class PodPicker extends React.Component {
               <div className="pp-inner-right">
                 {
                   this.props.podDataArray.map((d, i) => {
-                    console.log("d",d);
                     let activeClass = "pp-loop-div";
                     if (d.isActive === false) {
                       activeClass += " pp-inactive";
@@ -55,7 +54,7 @@ class PodPicker extends React.Component {
           <div className="pp-right">
             <div className="pp-top">
               <div>
-                <h3 className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>INTRO</h3>
+                <h3 className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>SUBSCRIBE</h3>
               </div>
               <div>
                 <h3 className={this.props.currentView === "about" ? "selected" : "" } onClick={this.props.goToAboutView}>ABOUT</h3>
