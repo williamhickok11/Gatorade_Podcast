@@ -41,7 +41,7 @@ export default class App extends Component {
 
   // define all functions (click events)
   goToNextPod(i) {
-    if (i <= 4) {
+    if (i <= 5) {
       this.setState({
         index: parseInt(i)+1,
         currentPodcast: this.state.podData[parseInt(i)+1]

@@ -35,7 +35,7 @@ h1, h2, h3, h4, h6 {
 }
 h1 {
   text-transform: capitalize;
-  color: #F9A350;
+  color: #FC4C02;
   font-family: "GatoradeBlack", monospace;
   text-transform: capitalize;
   /*letter-spacing: 1.5px;*/
@@ -237,8 +237,8 @@ p {
   margin: 25px 50px 25px 0;
 }
 .selected {
-  text-decoration: underline #F9A350;
-  color: #F9A350;
+  text-decoration: underline #FC4C02;
+  color: #FC4C02;
 }
 
 
@@ -271,6 +271,9 @@ p {
 .hash-tag p {
   display: inline;
   margin-right: 10px;
+}
+.footer-icons a {
+  float: right;
 }
 
 
@@ -465,24 +468,6 @@ p {
     display: block;
   }
 }
-
-
-/*this is it!*/
-    /*box-shadow: inset 3px 3px 20px 20px #454335;*/
-/*this is it!*/
-
-
-
-
-
-
-/*
-.loader {
-  background-image:  url('../imgs/loading.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}*/
 
 
 
