@@ -439,7 +439,8 @@ p {
     width: 100%;
   }
   .gim-im {
-    width: 0;
+    width: 20%;
+    float: left;
   }
   .rss-feed {
     margin: 25px 0 0 0;
@@ -449,6 +450,10 @@ p {
     position: relative;
     top: 160px;
     z-index: -1;
+  }
+  .footer-icons {
+    float: right;
+    width: 60%;
   }
 }
 

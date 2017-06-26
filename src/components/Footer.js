@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="footer-third hash-tag">
         <p>#makedefeatyourfuel</p><p>#winfromwithin</p>
       </div>
-      <div style={{textAlign:'right'}} className="footer-third footer-icons">
+      <div className="footer-third footer-icons">
         <a target="_blank" href="https://www.instagram.com/gatorade/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="../imgs/Icon_instagram.png" alt="" /></a>
         <a target="_blank" href="https://www.facebook.com/Gatorade/"><img style={{width:'30px', margin:'0 0 0 20px'}} src="../imgs/Icon_Fb.svg" alt="" /></a>
         <a target="_blank" href="https://twitter.com/gatorade"><img style={{width:'30px', margin:'0 0 0 20px'}} src="../imgs/Icon_Twitter.svg" alt="" /></a>
