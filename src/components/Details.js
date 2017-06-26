@@ -6,6 +6,10 @@ class Details extends React.Component {
     super(props);
   }
   render() {
+    let iframeNotEmpty = "iframe";
+    if (this.props.currentPodcast.iframeUrl === "") {
+      iframeNotEmpty = "";
+    }
     return (
       <div className="detail-view">
       {
@@ -20,7 +24,7 @@ class Details extends React.Component {
             <h2>{this.props.currentPodcast.subtitle}</h2>
             <p className="detail-text">{this.props.currentPodcast.summary}</p>
             <div style={{width:'100%', margin:'20px auto'}}>
-              <div className="iframe loader"><iframe frameBorder="no" height="150" scrolling="no" src={this.props.currentPodcast.iframeUrl} width="100%" /></div>
+              <div className={iframeNotEmpty}><iframe frameBorder="no" height="150" scrolling="no" src={this.props.currentPodcast.iframeUrl} width="100%" /></div>
             </div>
           </div>
         </div>

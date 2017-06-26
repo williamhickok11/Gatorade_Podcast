@@ -84,7 +84,7 @@ class PodPicker extends React.Component {
         <div className="pp-main-inner-mobile">
           <div className="pp-loop-div-mobile ppld-mobile">
             {/*<input type="button" disabled="true" value="INTRO" onClick={this.props.goToIntroView} />*/}
-            <p className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>INTRO</p>
+            <p className={this.props.currentView === "intro" ? "selected" : "" } onClick={this.props.goToIntroView}>SUBSCRIBE</p>
             <div className="verticle-line" />
           </div>
           <div className="pp-loop-div-mobile ppld-mobile">
