@@ -35,7 +35,7 @@ h1, h2, h3, h4, h6 {
 }
 h1 {
   text-transform: capitalize;
-  color: #FC4C02;
+  color: #f47d30;
   font-family: "GatoradeBlack", monospace;
   text-transform: capitalize;
   /*letter-spacing: 1.5px;*/
@@ -237,8 +237,8 @@ p {
   margin: 25px 50px 25px 0;
 }
 .selected {
-  text-decoration: underline #FC4C02;
-  color: #FC4C02;
+  text-decoration: underline #f47d30;
+  color: #f47d30;
 }
 
 
