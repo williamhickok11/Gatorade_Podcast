@@ -36,13 +36,15 @@ class Details extends React.Component {
           <p>From Gatorade and Gimlet Creative, <i>The Secret to Victory</i> is about how the most competitive athletes in the world use defeat to fuel them. Featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, J.J. Watt, Karl-Anthony Towns Jr., Kyle Schwarber, and the people who know them best. Hosted by ESPN writer and former NFL player Domonique Foxworth.</p>
           <br />
           <p>If you're new to podcasts, there are many places where you can listen to <i>The Secret to Victory</i>. Stream it online right here, or try out one of the links below:</p>
-          <div className="about-iframe">
-            <iframe frameBorder="no" height="200" scrolling="no" src="https://player.megaphone.fm/GLT3091702141?" width="100%" />
-          </div>
+          <br/>
+          <p>click below to subscribe</p>
           <div className="intro-image-div">
             <a target="_blank" href="https://itunes.apple.com/us/podcast/id1252154385"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
             <a target="_blank" href="https://open.spotify.com/show/1H6EbmX0tV6BkGkfeJ98KG"><img src="../imgs/Spotify.png" alt="" /></a>
             <a target="_blank" href="https://play.google.com/music/listen#/ps/Iocylyx7uf5s6xaizk6ol2t276m"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
+          </div>
+          <div className="about-iframe">
+            <iframe frameBorder="no" height="200" scrolling="no" src="https://player.megaphone.fm/GLT3091702141?" width="100%" />
           </div>
           <div className="rss-feed">
             <h2>Or, add this RSS feed to the player of your choice:</h2>
