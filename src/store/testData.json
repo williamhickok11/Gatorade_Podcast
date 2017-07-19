@@ -7,16 +7,34 @@
       "title": "THE SECRET TO VICTORY",
       "subtitle": "with JJ Watt, of the Houston Texans",
       "summary": "What happens when the best athletes in the world lose? From Gatorade and Gimlet Creative, a podcast about how the world’s most competitive athletes use defeat as motivation to build strength from the inside out, and ultimately come out on top. Episodes featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, J.J. Watt, Karl-Anthony Towns Jr., Kyle Schwarber, and the people who know them best. Listen here, or subscribe wherever you get your podcasts.",
+      "summary1": "",
+      "summary2": "",
+      "summaryBullets": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
       "showNotes": "These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy. These include the transcript, so fairly large blocks of copy.",
       "isActive": true,
       "isSelected": false
     },
     {
       "i": "1",
-      "iframeUrl": "",
-      "title": "PEYTON & ELI MANNING",
-      "subtitle": "Episode coming soon.",
-      "summary": "",
+      "iframeUrl": "https://player.megaphone.fm/GLT5906565387?auto=true",
+      "title": "PEYTON AND ELI MANNING: ROUGH ROOKIE SEASON",
+      "subtitle": "",
+      "summary": "Before they won Super Bowls-- before they made Pro Bowls-- before the name Manning was synonymous with victory, both Eli Manning and Peyton Manning had to learn what it meant lose, and lose big. This week, on The Secret to Victory: Peyton and Eli Manning on what they each learned from their rookie seasons.",
+      "summary1": "The Secret to Victory is hosted by Domonique Foxworth.",
+      "summary2": "This episode features:",
+      "summaryBullets": [
+        "- Peyton Manning, retired NFL quarterback",
+        "- Eli Manning, quarterback for the New York Giants",
+        "- Archie Manning, father of Eli and Peyton Manning, former NFL quarterback",
+        "- Jim Mora, former head coach of the Indianapolis Colts",
+        "- Tom Coughlin, former head coach of the New York Giants, current executive vice president of football operations at the Jacksonville Jaguars"
+      ],
       "showNotes": "",
       "isActive": false,
       "isSelected": false
@@ -27,6 +45,15 @@
       "title": "KARL-ANTHONY TOWNS JR.",
       "subtitle": "Episode coming soon.",
       "summary": "",
+      "summary1": "",
+      "summary2": "",
+      "summaryBullets": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
       "showNotes": "",
       "isActive": false,
       "isSelected": false
@@ -37,6 +64,15 @@
       "title": "SERENA WILLIAMS",
       "subtitle": "Episode coming soon.",
       "summary": "",
+      "summary1": "",
+      "summary2": "",
+      "summaryBullets": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
       "showNotes": "",
       "isActive": false,
       "isSelected": false
@@ -47,6 +83,15 @@
       "title": "J.J. WATT",
       "subtitle": "Episode coming soon.",
       "summary": "",
+      "summary1": "",
+      "summary2": "",
+      "summaryBullets": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
       "showNotes": "",
       "isActive": false,
       "isSelected": false
@@ -57,6 +102,15 @@
       "title": "KYLE SCHWARBER",
       "subtitle": "Episode coming soon.",
       "summary": "",
+      "summary1": "",
+      "summary2": "",
+      "summaryBullets": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
       "showNotes": "",
       "isActive": false,
       "isSelected": false
@@ -67,6 +121,15 @@
       "title": "MATT RYAN",
       "subtitle": "Episode coming soon.",
       "summary": "",
+      "summary1": "",
+      "summary2": "",
+      "summaryBullets": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
       "showNotes": "",
       "isActive": false,
       "isSelected": false

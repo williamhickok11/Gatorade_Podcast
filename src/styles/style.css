@@ -178,7 +178,7 @@ p {
   cursor: pointer;
 }
 .pp-loop-div {
-  height: 50px;
+  height: 75px;
 }
 .pp-top {
   height: 100px;
@@ -468,3 +468,9 @@ p {
 
 
 
+.rush p {
+  padding: 0;
+}
+.rush {
+  padding-bottom: 20px
+}
