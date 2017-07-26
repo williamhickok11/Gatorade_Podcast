@@ -474,3 +474,16 @@ p {
 .rush {
   padding-bottom: 20px
 }
+.moreEpisodesRight {
+  position: absolute;
+  top: 62%;
+  left: 90%;
+  color: #ACD959;
+}
+
+.moreEpisodesLeft {
+  position: absolute;
+  top: 62%;
+  left: 7%;
+  color: #ACD959;
+}

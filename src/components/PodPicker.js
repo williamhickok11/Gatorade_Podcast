@@ -91,6 +91,8 @@ class PodPicker extends React.Component {
             <p className={this.props.currentView === "about" ? "selected" : "" } onClick={this.props.goToAboutView}>ABOUT</p>
             <div className="verticle-line" />
           </div>
+          <p className="moreEpisodesRight">&gt;</p>
+          <p className="moreEpisodesLeft">&lt;</p>
           {
             this.props.podDataArray.map((d, i) => {
               let activeClass = "pp-loop-div-mobile";
@@ -105,12 +107,12 @@ class PodPicker extends React.Component {
               );
             })
           }
+
         </div>
       </div>
     );
   }
 }
-
 
 {/**** Just for validation ****/}
 PodCardText.propTypes = {
