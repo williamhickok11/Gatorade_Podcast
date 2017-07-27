@@ -32,7 +32,7 @@ class Details extends React.Component {
             {
               this.props.currentPodcast.summaryBullets.map((d, i) => {
                 return (
-                  <p className="detail-text">{this.props.currentPodcast.summaryBullets[i]}</p>
+                  <p key={i} className="detail-text">{this.props.currentPodcast.summaryBullets[i]}</p>
                 );
               })
             }
@@ -49,9 +49,9 @@ class Details extends React.Component {
           </div>
           <p>Click below to subscribe</p>
           <div className="intro-image-div">
-            <a target="_blank" href="https://itunes.apple.com/us/podcast/id1252154385"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
-            <a target="_blank" href="https://open.spotify.com/show/1H6EbmX0tV6BkGkfeJ98KG"><img src="../imgs/Spotify.png" alt="" /></a>
-            <a target="_blank" href="https://play.google.com/music/listen#/ps/Iocylyx7uf5s6xaizk6ol2t276m"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
+            <a onClick={()=>this.props.gaClickEvent('apple')} target="_blank" href="https://itunes.apple.com/us/podcast/id1252154385"><img src="../imgs/Badge_Apple.svg" alt="" /></a>
+            <a onClick={()=>this.props.gaClickEvent('spotify')} target="_blank" href="https://open.spotify.com/show/1H6EbmX0tV6BkGkfeJ98KG"><img src="../imgs/Spotify.png" alt="" /></a>
+            <a onClick={()=>this.props.gaClickEvent('google')} target="_blank" href="https://play.google.com/music/listen#/ps/Iocylyx7uf5s6xaizk6ol2t276m"><img src="../imgs/Badge_Google_Play.svg" alt="" /></a>
           </div>
           <p>From Gatorade and Gimlet Creative, <i>The Secret to Victory</i> is about how the most competitive athletes in the world use defeat to fuel their next win. Featuring Serena Williams, Peyton Manning, Eli Manning, Matt Ryan, J.J. Watt, Karl-Anthony Towns, and Kyle Schwarber, and the people who know them best. Hosted by ESPN writer and former NFL player Domonique Foxworth.</p>
           <br />
@@ -89,4 +89,5 @@ Details.propTypes = {
   goToNextPod: PropTypes.func.isRequired,
   currentView: PropTypes.string.isRequired,
   index: PropTypes.string.isRequired,
+  gaClickEvent: PropTypes.func.isRequired
 };

@@ -21,6 +21,7 @@ export default class App extends Component {
     this.goToPreviousPod = this.goToPreviousPod.bind(this);
     this.goToIntroView = this.goToIntroView.bind(this);
     this.goToAboutView = this.goToAboutView.bind(this);
+    this.gaClickEvent = this.gaClickEvent.bind(this);
   }
 
   componentDidMount() {
@@ -75,6 +76,14 @@ export default class App extends Component {
       index: ""
     });
   }
+  gaClickEvent(button) {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'SubscribeButton',
+      eventAction: 'click',
+      eventLabel: button
+    });
+  }
 
   render() {
     return (
@@ -97,6 +106,7 @@ export default class App extends Component {
             podDataArray = {this.state.podData}
           />
           <Details
+            gaClickEvent = {this.gaClickEvent}
             currentView = {this.state.currenView}
             currentPodcast = {this.state.currentPodcast}
             goToNextPod = {this.goToNextPod}
